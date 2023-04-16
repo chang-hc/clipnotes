@@ -1,11 +1,18 @@
 ---
-title: "HCC's Current Reading List"
+title: "Roadmap"
 ---
 
-# Physics
-- Becker-Becker-Schwarz  
-- CFT for hep-ph
+# Market 
+- Maintain the daily market watch
+- Set up the R backend
 
+
+# Reading List 
+- Physics
+  - Becker-Becker-Schwarz  
+  - CFT for hep-ph
+-Math 
+  - Lenister's Basic Cateogry Theory
 
 
 
