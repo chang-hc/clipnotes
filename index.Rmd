@@ -2,9 +2,18 @@
 title: "HCC's Current Reading List"
 ---
 
+# Physics
+- Becker-Becker-Schwarz  
+- CFT for hep-ph
 
-# Ref:
+
+
+
+
+
+
+# Ref: R Markdown Site 
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
 - https://nceas.github.io/training-rmarkdown-website/tutorial.html
-- https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html
 - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
 - https://p8105.com/making_websites.html
