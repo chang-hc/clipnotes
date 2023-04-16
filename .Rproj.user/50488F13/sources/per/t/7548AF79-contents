@@ -1,0 +1,98 @@
+---
+title: Becker-Becker-Schwarz
+output: 
+  html_document:
+    toc: true
+    number_sections: true      
+bibliography: [./bib/phys.bib ]
+link-citations: true
+---
+ 
+Reading Ch1 of [@becker2006string]
+
+# Why?
+One important feature is the ability to generate GR via its dynamics.
+
+- "QFT $\rightarrow$ ST" $\Rightarrow$ "World-lines[^1]  $\rightarrow$ World-sheet"
+  - QFT interaction: local singularties on the junctions of different lines ending-afar
+  - ST interation: topology on the whole sheet
+    * Hence,the UV divergence "must"(if it can be done consistently at all) be resolved in the string picture because above the string scale the smooth nature of the string dynamics resolves the sigularity.
+
+## Two formulations
+### Nambu-Go Action: 
+$$
+S_{p} = -T_{p}V
+$$
+### String Sigma Model:
+$$
+S_{\sigma} = - \frac{T}{2} \int \sqrt{-h} h^{\alpha\beta}\eta_{\mu\nu}
+\partial_{\alpha}X^{\mu}
+\partial_{\beta}X^{\nu},
+$$
+
+where 
+  -  $h^{\alpha\beta}(\sigma, \tau)$ the auxiliary[^2] world-sheet metric, 
+  - $h=\text{det} \,\, h_{\alpha\beta}$, 
+  - $h^{\alpha\beta}$ is the inverse of $h_{\alpha\beta}$, as $h^{\alpha\beta} = [h^{-1}]^{\alpha\beta}$,
+  - $X^{\mu}(\sigma, \tau)$, the embedding of the world-sheet into the ambient space-time, aka 
+    - $(\sigma, \tau) \in \mathcal{M}^2 \rightarrow X^{\mu} \in \mathcal{R}^\mathcal{D}$
+
+
+
+## The equvalence of the two
+
+Classically, we can use $S_\sigma$ to find the EOM of $h_{\alpha\beta}$, and it can be shown that $S_\sigma$ localized at those $h$-locale will reccover the the Nambu-Goto on $X^\mu$
+
+However, quantum mechanically, we have the $\hbar$ to deal with, as well as the gauge-fixing and what not =>  (Spoiler alert!!) All in all, we will find that there is a conformal anomaly unless $mathcal{D}=26$ for bosonic strings, and $\mathcal{D}=10$ for superstrings 
+
+
+
+
+
+### First Superstring revolution, 1984
+
+The discovery: Q-consistency of $\mathcal{N}=1$ 10-dim SST requires a local Yang-Mills gauge symmetry on either $SO(32)$ or $E_8\times E_8$ (cancelation of q-anomalies, see Ch5, also with $U(1)^{496}$ and $E_8 \times U(1)^{248}$)
+
+- $\mathcal{N}=2$
+  - type II: we have both left- and right-moving modes, and we get to choose the handedness on each, either the opposite (IIA) or the same (IIB);
+- $\mathcal{N}=1$
+  - type I: for IIB above, we have the left-right symmetry, and we get to mode this symmetery out (orbifold projection), wit the remaining content being type I;
+  - 2 "Heterotic"s: left being left-moving  $\mathcal(D)=26$ bosonic strings, right being right-moving  $\mathcal(D)=11$ superstrings! The 16 extra dimension on the left must be some tori to have a final consistent (q-anomaly-free) formulation: Two such tori, each corrresponds to $SO(32)$ or $E_8\times E_8$.
+
+
+### Second Superstring revolution,late 1980s to 1990s
+
+Too many ultimate theories now...however, T-duality is found to related the twp type-Is and type-IIs! With the nonperturbative S-duality and the opening up of another dimension at strong coupling, we have the final united theory!
+
+T-duality: two different geometries in the extra dimension are physically q-equivalent!
+- Example: circle with radius $R$ is the same as circle with radius $\frac{l^2_s}{R}$
+
+S-duality: $g_s \leftrightarrow \frac{1}{g_s}$ 
+
+- type-IIB with itself 
+- type-IA with $\text{Heterotic}|_{SO(32)}$
+- How about type-IIA and $\text{Heterotic}|_{E_8 \times E_8}$?
+    - they grow an extra dimension of the size of $g_s l_s$! 
+      - A circle for type-IIA;
+      - A line interval for $\text{Heterotic}|_{E_8 \times E_8}$ )
+
+Matrix theory
+
+- A dual description of M-theory in flat 11-dimensional space-time
+- QM of N$\times$N matrices in the large N limit
+
+F-theory
+
+- We have S-duality opening up type-IIA and $\text{Heterotic}|_{E_8 \times E_8}$ to M-theory ... how about others?
+- type-IIB has a non-perturbative $SL(2,\mathbb{Z})$-symmetry -- which is naturally associated with a fictitious torus (the modular group of a torus) +  type-IIB also has a complex scalar field $\tau$ transforming under $SL(2,\mathbb{Z})$
+  - We can see this symmetry geometrically, having an auxiliary two-torus $T^2$ with complex structure $\tau$.
+
+
+[^1]: Maybe we need to familar ourselves with the word-line description first: 
+[Strassler, 1992, Field Theory Without Feynman Diagrams: One-Loop Effective Actions](https://arxiv.org/abs/hep-ph/9205205); [Schubert, 2019, Quantum mechanical path integrals in the first quantised approach to quantum field theory](https://arxiv.org/abs/1912.10004); [Schubert, Perturbative Quantum Field Theory in the String-Inspired Formalism](https://arxiv.org/abs/hep-th/0101036); [stackexchange: Worldline formulation of QFT](https://physics.stackexchange.com/questions/522717/worldline-formulation-of-qft)
+
+[^2]: the auxiliary here is very apopos: we will gauge its nature later.
+
+
+
+# Reference
