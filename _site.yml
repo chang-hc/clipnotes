@@ -19,11 +19,7 @@ navbar:
         - text: '---'
         - text: "CFT for Particle Physicts"
           href: 01_CFT4hep-ph.html
-    - text: "Playgrounds"
-      icon: fa-gear
-      menu:
-        - text: "rc2e"
-          href: rc2e_ch11.ipynb
+
 
   right:
   - icon: fa-github
