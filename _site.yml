@@ -1,5 +1,5 @@
 name: "Clipnotes Galore!"
-output_dir: "doc"
+output_dir: "docs"
 output:
   html_document:
     theme: darkly
