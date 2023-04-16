@@ -7,3 +7,4 @@ title: "HCC's Current Reading List"
 - https://nceas.github.io/training-rmarkdown-website/tutorial.html
 - https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html
 - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
+- https://p8105.com/making_websites.html
