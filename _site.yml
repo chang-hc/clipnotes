@@ -21,7 +21,7 @@ navbar:
           href: 01_CFT4hep-ph.html
           
   right:
-  - href: https://github.com/chang-hi
-    icon: fa-github
-  - href: mailto:<hanchih.chang@gmail.com>
+  - icon: fa-github
+    href: https://github.com/chang-hi
   - icon: fa-envelope
+    href: mailto:<hanchih.chang@gmail.com>

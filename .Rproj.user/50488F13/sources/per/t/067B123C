@@ -1,6 +1,6 @@
 {
     "id": "067B123C",
-    "path": "~/01_working/20230416_test_portal/maybe_portal/01_CFT4hep-ph.Rmd",
+    "path": "~/00_git/clipnotes/01_CFT4hep-ph.Rmd",
     "project_path": "01_CFT4hep-ph.Rmd",
     "type": "r_markdown",
     "hash": "591926630",
@@ -13,7 +13,7 @@
         "source_window_id": "",
         "Source": "Source",
         "cursorPosition": "67,11",
-        "scrollLine": "57"
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1681632723,
