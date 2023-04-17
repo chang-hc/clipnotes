@@ -11,7 +11,7 @@
 
 
 
-<title>CFT for Particle Physicists</title>
+<title>Hollowood: Renormalization Group and Fixed Points in QFT</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -405,87 +405,38 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">CFT for Particle Physicists</h1>
+<h1 class="title toc-ignore">Hollowood: Renormalization Group and Fixed Points in QFT</h1>
 
 </div>
 
 
-<div id="CFT4hepph" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> CFT for Particle Physicists</h1>
-<div id="preface" class="section level2 unnumbered">
-<h2 class="unnumbered">Preface</h2>
-<p>Reading <span class="citation">(<a href="#ref-gillioz2022conformal" role="doc-biblioref">Gillioz 2022</a>)</span></p>
-<ul>
-<li>Two more symmetries: scale symmetry, and special conformal symmetry
-<ul>
-<li>Modern conformal bootstrap!</li>
-<li>Unitarity bounds derived from the spectral representation!</li>
-<li>Appearance of UV and IR divergences!</li>
-</ul></li>
-</ul>
-</div>
-<div id="ch1-intro" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Ch1: Intro</h2>
-<ul>
-<li>New Definition: <span class="math display">\[\begin{align}
-\mathrm{CFT}  =&amp; \mathrm{RQFT}  \\
-      &amp;+ \mathrm{Scale Sym}\\
-     &amp;+ \mathrm{Special-Conformal Sym}
-\end{align}\]</span>
-<ul>
-<li>RQFT: flat-Minkowski, Wightman axioms, and all that.</li>
-<li>Scale Sym: RG, no-mass gap, and all that</li>
-<li>Special-Conformal Sym: conformal correlation functions, OPE(!), conformal bootstrap(!!)</li>
-</ul></li>
-</ul>
-</div>
-<div id="ch2-classical-cft" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Ch2: C(lassical)-CFT</h2>
-<ul>
-<li>The physical symmetry is a special transformation enjoyed by a physical system, and in the most general term it can be set up tentatively (without putting requirement at all) as: <span class="math display">\[
-x^\mu \rightarrow x&#39;^\mu = x^\mu + \varepsilon^\mu(x) + \mathcal{O}(\varepsilon^2)
-\]</span></li>
-<li>The Physical distance, aka <span class="math inline">\(ds = g_{\mu\nu}(x) dx^\mu dx^\nu\)</span>
-<ul>
-<li>Either Eucliean <span class="math inline">\(\delta_{\mu\nu}\)</span> or Minskowski <span class="math inline">\(\eta_{\mu\nu}\)</span></li>
-<li>Distance being physical, aka invariant under valid physically sensible transformation: <span class="math display">\[
-g&#39;_{\mu\nu}(x&#39;) dx&#39;^\mu dx&#39;^\nu = g_{\alpha\beta}(x) dx^\alpha dx^\beta
-\]</span></li>
-<li>Assuming the metric is flat, aka <span class="math inline">\(\partial_{\alpha} g_{\mu\nu} \equiv 0\)</span>, then</li>
-</ul></li>
-</ul>
-<p><span class="math display">\[\begin{align}
-  g&#39;_{\mu\nu}(x&#39;)  =&amp;  
-  g_{\alpha\beta}
-  \frac{\partial x^\alpha}{\partial x&#39;^\mu}
-  \frac{\partial x^\beta}{\partial x&#39;^\nu} \\
-  =&amp; g_{\alpha\beta} 
-  (\delta^\alpha_\mu - \partial_\mu \varepsilon^\alpha)
-  (\delta^\beta_\nu - \partial_\nu \varepsilon^\beta) 
-  + \mathcal{O}(\varepsilon^2) \\
-  =&amp;  g_{\mu\nu} - \partial_\mu \varepsilon_\nu - \partial_\nu \varepsilon_\mu 
-  + \mathcal{O}(\varepsilon^2) 
-\end{align}\]</span></p>
-<ul>
-<li>Therefore, in a flat metric, for the distance to be preserved, the would-be good physical symmetry cannot be arbitrary in that it needs to obey the constrain of <span class="math inline">\(\partial_\mu \varepsilon_\nu + \partial_\nu \varepsilon_\mu \overset{!}{=} 0\)</span>.
-<ul>
-<li>The most general solution: <span class="math inline">\(\varepsilon_\mu = a^\mu + \omega_{\mu\nu}(x) x^\nu\)</span>, with <span class="math inline">\(a^\mu\)</span> be a constant, and <span class="math inline">\(\omega_{\mu\nu}\)</span> be anti-symmetric tensor.
-<ul>
-<li><span class="math inline">\([a^\mu|x^\mu\rightarrow{x^\mu+a^\mu}]\)</span>, the translation group!</li>
-<li><span class="math inline">\([\omega_{\mu\nu}|x^\mu\rightarrow{x^\mu+\omega_{\mu\nu}x^\nu}]\)</span>: the rotation group!
-<ul>
-<li><span class="math inline">\([a^\mu,\omega_{\mu\nu}]\)</span>, the Poincare group!</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
+<p>Reading <span class="citation">(<a href="#ref-hollowood2013renormalization" role="doc-biblioref">Hollowood 2013</a>)</span></p>
+<div id="ch1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Ch1</h1>
+<blockquote>
+<p>The way that phenomena on different distance, or equivalently energy/momentum, scales relate to one another.</p>
+</blockquote>
+<blockquote>
+<p>At low energies, the point is not that the quarks do not matter, but the only way that they do matter is to <strong><em>set various coupling constants and masses</em></strong> in the effective theory where the manifest degrees-of-freedom are the hadrons and mesons.</p>
+</blockquote>
+<blockquote>
+<p>The description of the physical world on distance scales <span class="math inline">\(&gt;\mu^{-1}\)</span> is most efficiently described by a theory where the degrees-of-freedom are defined around the scale <span class="math inline">\(\mu^{-1}\)</span>.</p>
+</blockquote>
+<p>… Aka other observables defined at the scale of <span class="math inline">\(\mu^{-1}\)</span>.</p>
+<blockquote>
+<p>As long as there are <strong><em>only a few</em></strong> effective variables and a few cou- plings, these details can be fixed experimentally …</p>
+</blockquote>
+<p><span class="math display">\[
+\mathcal{L}(\{g_i\}) = \int [\mathcal{D} \phi] e^{i S[ \phi, \{g_i\}]}
+\]</span> First RG <span class="math display">\[
+F(g_i(\mu);l)_{\mu} \overset{!}{=}  F(g_i(\mu&#39;);l)_{\mu&#39;}
+\]</span></p>
 </div>
 <div id="reference" class="section level1 unnumbered">
 <h1 class="unnumbered">Reference</h1>
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-gillioz2022conformal" class="csl-entry">
-Gillioz, Marc. 2022. <span>“Conformal Field Theory for Particle Physicists.”</span> <em>arXiv Preprint arXiv:2207.09474</em>.
+<div id="ref-hollowood2013renormalization" class="csl-entry">
+Hollowood, Timothy J. 2013. <em>Renormalization Group and Fixed Points: In Quantum Field Theory</em>. Vol. 48. Springer.
 </div>
 </div>
 </div>

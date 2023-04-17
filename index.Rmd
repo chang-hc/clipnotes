@@ -1,26 +1,69 @@
 ---
 title: "Roadmap"
+author: "HCC"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    #number_sections: true   
 ---
 
-# Market 
+# Market How-To
 - Maintain the daily market watch
 - Set up the R backend
 
 
 # Reading List 
-- Physics
+
+## Trading
+  - Iqbal - Volatility; Practical Options Theory
+  - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
+
+## Estimation
+  - Doerfler, Dead Reckoning
+  - Migdal
+  - Wells: Effective Theories in Physics
+
+## Bayesian
+  - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
+  - McElreath, Statistical rethinking
+  - Bayesian Essentials with R, Second Edition
+
+## Physics
   - Becker-Becker-Schwarz  
   - CFT for hep-ph
--Math 
-  - Lenister's Basic Cateogry Theory
+  - Hollowood: Renormalization Group and Fixed Points in QFT
+  
+## Math 
+  - Lenister's Basic Category Theory
+
+## Fun
+  -  A Short Journey from Quarks to the Universe 
+  
+# Archive
+
+## [q-fin]
+  - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
+  - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
+
+# R Learning
+
+##  Good Reading
+- [tidyquant](https://business-science.github.io/tidyquant/)
+  - [Intro](https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html)
+- [R for Data Science](https://r4ds.had.co.nz/model-basics.html)
+- [R Cookbook 2ed](https://rc2e.com/timeseriesanalysis#recipe-id085)
+- [R Packages (2e)](https://r-pkgs.org/)
+
+## Code Study
+- [blottb7/tick-data/](https://github.com/blottb7/tick-data/)
 
 
-
-
-
-
-# Ref: R Markdown Site 
-- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
-- https://nceas.github.io/training-rmarkdown-website/tutorial.html
-- https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
-- https://p8105.com/making_websites.html
+# Ref 
+- R Markdown 
+  - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
+  - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
+  - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
+  - https://nceas.github.io/training-rmarkdown-website/tutorial.html
+  - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
+  - https://p8105.com/making_websites.html

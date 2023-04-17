@@ -1,0 +1,35 @@
+---
+title: "Hollowood: Renormalization Group and Fixed Points in QFT"
+output: 
+  html_document:
+    toc: true
+    number_sections: true      
+bibliography: [./bib/phys.bib ]
+link-citations: true
+---
+Reading [@hollowood2013renormalization]
+
+
+# Ch1
+
+> The way that phenomena on different distance, or equivalently energy/momentum, scales relate to one another.
+
+> At low energies, the point is not that the quarks do not matter, but the only way that they do matter is to ***set various coupling constants and masses*** in the effective theory where the manifest degrees-of-freedom are the hadrons and mesons.
+
+> The description of the physical world on distance scales $>\mu^{-1}$ is most efficiently described by a theory where the degrees-of-freedom are defined around the scale $\mu^{-1}$.
+
+... Aka other observables defined at the scale of $\mu^{-1}$.
+
+> As long as there are ***only a few*** effective variables and a few cou-
+plings, these details can be fixed experimentally ...
+
+$$
+\mathcal{L}(\{g_i\}) = \int [\mathcal{D} \phi] e^{i S[ \phi, \{g_i\}]}
+$$
+First RG
+$$
+F(g_i(\mu);l)_{\mu} \overset{!}{=}  F(g_i(\mu');l)_{\mu'}
+$$
+
+
+# Reference

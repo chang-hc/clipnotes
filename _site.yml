@@ -8,9 +8,9 @@ output:
 navbar:
   title: "Clipnotes Galore!"
   left:
-    - text: "Current Reading List"
+    - text: "Roadmap"
       href: index.html
-    - text: "Notes"
+    - text: "Physics"
       icon: fa-gear
       menu:
         - text: "Becker-Becker-Schwarz"
@@ -19,6 +19,14 @@ navbar:
         - text: '---'
         - text: "CFT for Particle Physicts"
           href: 01_CFT4hep-ph.html
+        - text: '---'
+        - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
+          href: 02_Hollowood_RGinQFTs.html
+    - text: "Bayesian"
+      icon: fa-gear
+      menu:
+        - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
+          href: 30_Barreda_Silbert_2023.html
 
 
   right:

@@ -1,0 +1,30 @@
+---
+title: "Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data"
+output:
+  html_document:
+    toc: yes
+    number_sections: yes
+bibliography: ./bib/stats.bib
+link-citations: yes
+---
+
+Reading [@barredabayesian]
+
+- Github: <https://github.com/santiagobarreda/bmmrmd>
+
+> There is variation in the data (conceptually ‘below’), and in the parameters of the probability distributions generating this data (conceptually ‘above’). 
+
+
+# Preface {-}
+
+
+> Although statistical knowledge might seem like declarative knowledge, in many ways it is much more similar to procedural knowledge.
+
+... so true in all the interesting fields: hep-th, math, red-eye-flight estimations, etc.
+
+> About a desire tolearn, a genuine interest in the topic, and perseverance.
+
+
+
+# Reference
+

@@ -93,6 +93,4 @@ F-theory
 
 [^2]: the auxiliary here is very apopos: we will gauge its nature later.
 
-
-
 # Reference
