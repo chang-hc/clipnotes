@@ -8,11 +8,7 @@ output:
     #number_sections: true   
 ---
 
-```{r include=FALSE}
-library(magick)
-```
-
-```{tikz}
+```{tikz, echo=FALSE}
 \usetikzlibrary{arrows}
 \begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
 \node (P) {$P$};
@@ -29,6 +25,8 @@ library(magick)
 \draw[->, dashed] (P1) to node {$k$} (P);
 \end{tikzpicture}
 ```
+
+
 
 # Market How-To
 - Maintain the daily market watch
