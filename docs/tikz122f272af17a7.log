@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 APR 2023 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.9)  18 APR 2023 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tikza0fe169eab5f.tex
-(./tikza0fe169eab5f.tex
+**tikz122f272af17a7.tex
+(./tikz122f272af17a7.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (/home/hchang/.TinyTeX/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files standalone
@@ -323,8 +323,8 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box65
 )
-No file tikza0fe169eab5f.aux.
-\openout1 = `tikza0fe169eab5f.aux'.
+No file tikz122f272af17a7.aux.
+\openout1 = `tikz122f272af17a7.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -366,23 +366,25 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 504.
 (/home/hchang/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/home/hchang/.TinyTeX/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/home/hchang/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/home/hchang/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen258
+\pgfarrowlength=\dimen259
+\pgfarrowwidth=\dimen260
+\pgfarrowlinewidth=\dimen261
 ))
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \usepackage
-                {tikz-cd} 
+! Undefined control sequence.
+l.14 M_{n_k}(\mathbb
+                    {C}) \arrow[d,"\eta_{i,n}"] 
 Here is how much of TeX's memory you used:
- 13297 strings out of 477977
- 275914 string characters out of 5838886
- 1849666 words of memory out of 5000000
- 33273 multiletter control sequences out of 15000+600000
- 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 14157 strings out of 477977
+ 302748 string characters out of 5838886
+ 1850666 words of memory out of 5000000
+ 34122 multiletter control sequences out of 15000+600000
+ 512741 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,1n,118p,421b,90s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,15n,118p,422b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 !  ==> Fatal error occurred, no output PDF file produced!

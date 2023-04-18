@@ -2,29 +2,16 @@
 title: "Roadmap"
 author: "HCC"
 date: "`r Sys.Date()`"
-output: 
+output:
+  pdf_document:
+    toc: yes
   html_document:
-    toc: true
-    #number_sections: true   
+    toc: yes
 ---
 
-```{tikz, echo=FALSE}
-\usetikzlibrary{arrows}
-\begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
-\node (P) {$P$};
-\node (B) [right of=P] {$B$};
-\node (A) [below of=P] {$A$};
-\node (C) [below of=B] {$C$};
-\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
-\draw[->] (P) to node {$f$} (B);
-\draw[->] (P) to node [swap] {$g$} (A);
-\draw[->] (A) to node [swap] {$f$} (C);
-\draw[->] (B) to node {$g$} (C);
-\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
-\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
-\draw[->, dashed] (P1) to node {$k$} (P);
-\end{tikzpicture}
-```
+
+
+
 
 
 
@@ -102,10 +89,78 @@ output:
 
 # Ref 
 - R Markdown 
-  - Diagrams:
-    - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
-    - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
   - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
   - https://nceas.github.io/training-rmarkdown-website/tutorial.html
   - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
   - https://p8105.com/making_websites.html
+  
+
+- Diagrams:
+  - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
+  - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
+  
+- TikZ-cd
+  - [TikZ-cd editor](https://tikzcd.yichuanshen.de/)
+  - [Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
+
+```{tikz, echo=FALSE}
+\usetikzlibrary{cd}
+\begin{tikzcd}
+A \arrow[rd] \arrow[r] & B \\
+&C\\
+\end{tikzcd}
+```  
+
+```{tikz, echo=FALSE}
+\usetikzlibrary{cd}
+\begin{tikzcd}
+T
+\arrow[drr, bend left, "x"]
+\arrow[ddr, bend right, "y"]
+\arrow[dr, dotted, "{(x,y)}" description] & & \\
+& X \times_Z Y \arrow[r, "p"] \arrow[d, "q"]
+& X \arrow[d, "f"] \\
+& Y \arrow[r, "g"]
+& Z
+\end{tikzcd}
+```  
+
+- TikZ per se
+  - <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
+  
+```{tikz, echo=FALSE}
+\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[->] (P) to node {$f$} (B);
+\draw[->] (P) to node [swap] {$g$} (A);
+\draw[->] (A) to node [swap] {$f$} (C);
+\draw[->] (B) to node {$g$} (C);
+\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[->, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}
+```
+  - https://texample.net/tikz/examples/commutative-diagram-tikz/
+  
+```{tikz,echo=FALSE}
+\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
+  {
+     F_t(x) & F(x) \\
+     A_t & A \\
+  };
+  \path[-stealth]
+    (m-1-1) edge node [left] {$\mathcal{B}_X$} (m-2-1)
+            edge [double] node [below] {$\mathcal{B}_t$} (m-1-2)
+    (m-2-1.east|-m-2-2) edge node [below] {$\mathcal{B}_T$}
+            node [above] {$\exists$} (m-2-2)
+    (m-1-2) edge node [right] {$\mathcal{B}_T$} (m-2-2)
+            edge [dashed,-] (m-2-1);
+\end{tikzpicture}
+```
+  
