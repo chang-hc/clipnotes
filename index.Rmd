@@ -30,6 +30,7 @@ output:
   - Fixed Income Securities; Tools for Today's Markets
 
 ## Q-Fin
+  - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
   - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
   - Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)
   - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)
@@ -90,20 +91,20 @@ output:
 # Ref 
 
 ## R Markdown 
-  - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
-  - <https://nceas.github.io/training-rmarkdown-website/tutorial.html>
-  - <https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html>
-  - <https://p8105.com/making_websites.html>
-  - <https://github.com/yihui/knitr-examples>
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
+- <https://nceas.github.io/training-rmarkdown-website/tutorial.html>
+- <https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html>
+- <https://p8105.com/making_websites.html>
+- <https://github.com/yihui/knitr-examples>
 
 ## Diagrams
-  - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
-  - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
+- [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
+- [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
   
 ## TikZ-cd
-  - <https://ctan.org/pkg/tikz-cd?lang=en>
-  - [ [UI] TikZ-cd editor](https://tikzcd.yichuanshen.de/)
-  - [ [pdf] Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
+- <https://ctan.org/pkg/tikz-cd?lang=en>
+- [ [UI] TikZ-cd editor](https://tikzcd.yichuanshen.de/)
+- [ [pdf] Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
 
 ```{tikz, echo=FALSE}
 \usetikzlibrary{cd}
@@ -112,6 +113,7 @@ A \arrow[rd] \arrow[r] & B \\
 &C\\
 \end{tikzcd}
 ```  
+
 
 ```{tikz, echo=FALSE}
 \usetikzlibrary{cd}
@@ -127,9 +129,26 @@ T
 \end{tikzcd}
 ```  
 
+- <https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/>
+
+```{tikz, echo=FALSE}
+\usetikzlibrary{cd}
+ \tikzcdset{every label/.append style = {font = \tiny}}
+\begin{tikzcd}[row sep=50, column sep=50]
+foo \arrow[r, shift left, "q_{foobar}"]
+\arrow[r, <-, shift right, swap, "q_{barfoo}"]
+\arrow[dr, shift right=2]
+& bar \arrow[d, shift left,"q_{barqux}"] \\
+& qux \arrow[u, shift left, "q_{quxbar}"]
+\arrow[ul, shift left=4, "q_{quxfoo}"]
+\end{tikzcd}
+``` 
+
+
+
 ## TikZ per se
-  - <https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ>
-  - <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
+- <https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ>
+- <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
   
 ```{tikz, echo=FALSE}
 \usetikzlibrary{arrows}
@@ -149,7 +168,7 @@ T
 \end{tikzpicture}
 ```
 
-  - <https://texample.net/tikz/examples/commutative-diagram-tikz/>
+- <https://texample.net/tikz/examples/commutative-diagram-tikz/>
   
 ```{tikz,echo=FALSE}
 \begin{tikzpicture}
