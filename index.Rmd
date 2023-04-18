@@ -31,6 +31,8 @@ output:
 
 ## Q-Fin
   - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
+  - Lehalle - Optimal liquidity-based trading tactics
+  - Lehalle - Incorporating Signals into Optimal Trading
   - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
   - Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)
   - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)

@@ -1,0 +1,17 @@
+---
+title: Lehalle 2013 - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process
+output:
+  html_document:
+    toc: yes
+    number_sections: yes
+bibliography: ./bib/qfin.bib
+link-citations: yes
+---
+
+Reading [@lehalle2013market]
+
+
+
+
+
+# Reference
