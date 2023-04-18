@@ -146,6 +146,7 @@ T
 \draw[->, dashed] (P1) to node {$k$} (P);
 \end{tikzpicture}
 ```
+
   - <https://texample.net/tikz/examples/commutative-diagram-tikz/>
   
 ```{tikz,echo=FALSE}
