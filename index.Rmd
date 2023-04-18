@@ -91,10 +91,10 @@ output:
 
 ## R Markdown 
   - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
-  - https://nceas.github.io/training-rmarkdown-website/tutorial.html
-  - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
-  - https://p8105.com/making_websites.html
-  
+  - <https://nceas.github.io/training-rmarkdown-website/tutorial.html>
+  - <https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html>
+  - <https://p8105.com/making_websites.html>
+  - <https://github.com/yihui/knitr-examples>
 ## Diagrams
   - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
   - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
