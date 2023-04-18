@@ -126,6 +126,7 @@ T
 ```  
 
 - TikZ per se
+  - <https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ>
   - <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
   
 ```{tikz, echo=FALSE}
@@ -145,7 +146,7 @@ T
 \draw[->, dashed] (P1) to node {$k$} (P);
 \end{tikzpicture}
 ```
-  - https://texample.net/tikz/examples/commutative-diagram-tikz/
+  - <https://texample.net/tikz/examples/commutative-diagram-tikz/>
   
 ```{tikz,echo=FALSE}
 \begin{tikzpicture}
