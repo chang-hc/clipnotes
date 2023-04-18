@@ -8,6 +8,28 @@ output:
     #number_sections: true   
 ---
 
+```{r include=FALSE}
+library(magick)
+```
+
+```{tikz}
+\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[->] (P) to node {$f$} (B);
+\draw[->] (P) to node [swap] {$g$} (A);
+\draw[->] (A) to node [swap] {$f$} (C);
+\draw[->] (B) to node {$g$} (C);
+\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[->, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}
+```
+
 # Market How-To
 - Maintain the daily market watch
 - Set up the R backend
@@ -15,10 +37,22 @@ output:
 
 # Reading List 
 
+
 ## Trading
   - Iqbal - Volatility; Practical Options Theory
   - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
+  - Interest Rate Markets; A Practical Approach to Fixed Income
+  - Fixed Income Securities; Tools for Today's Markets
 
+## Q-Fin
+  - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
+  - Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)
+  - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)
+  - Bouchaud - Theory of financial risk and derivative pricing; From statistical physics to risk management
+  - Bouchaud - Trades, Quotes and Prices; Financial Markets Under the Microscope
+  - Spadafora - Theoretical Foundations Quantitative Finance (All the Financial Math You Need to Survive)
+
+  
 ## Estimation
   - Doerfler, Dead Reckoning
   - Migdal
@@ -42,27 +76,37 @@ output:
   
 # Archive
 
-## [q-fin]
+## [q-fin.TR]
+  - [2023, A Bayesian derivation of the square root law of market impact](https://arxiv.org/abs/2303.08867)
+    -   [Hiroki 2020 A Brief Introductory Review of Information Thermodynamic](https://osf.io/h6dex)
+  - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
+  - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
+
+## [Alpeh]  
+  - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
   - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
   - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
 
 # R Learning
 
-##  Good Reading
-- [tidyquant](https://business-science.github.io/tidyquant/)
-  - [Intro](https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html)
+## Must-Read
+- [Modern R with the tidyverse](http://modern-rstats.eu/)
 - [R for Data Science](https://r4ds.had.co.nz/model-basics.html)
 - [R Cookbook 2ed](https://rc2e.com/timeseriesanalysis#recipe-id085)
-- [R Packages (2e)](https://r-pkgs.org/)
+- [R for Everyone: Advanced Analytics and Graphics, 2nd Edition](https://www.oreilly.com/library/view/r-for-everyone/9780134546988/)
 
-## Code Study
+##  Self-Study
+- [tidyquant](https://business-science.github.io/tidyquant/)
+  - [Intro](https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html)
+- [R Packages (2e)](https://r-pkgs.org/)
 - [blottb7/tick-data/](https://github.com/blottb7/tick-data/)
 
 
 # Ref 
 - R Markdown 
-  - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
-  - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
+  - Diagrams:
+    - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
+    - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
   - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
   - https://nceas.github.io/training-rmarkdown-website/tutorial.html
   - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html

@@ -9,11 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="HCC" />
 
-<meta name="date" content="2023-04-18" />
 
-<title>Roadmap</title>
+<title>Carr and Wu, 2006, A tale of two indices</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -385,141 +383,36 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Roadmap</h1>
-<h4 class="author">HCC</h4>
-<h4 class="date">2023-04-18</h4>
+<h1 class="title toc-ignore">Carr and Wu, 2006, A tale of two indices</h1>
 
 </div>
 
 
-<div id="market-how-to" class="section level1">
-<h1>Market How-To</h1>
+<p>Reading <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=871729">Carr and Wu, 2006, A tale of two indices.</a></p>
 <ul>
-<li>Maintain the daily market watch</li>
-<li>Set up the R backend</li>
+<li>Following up from <a href="https://www.bis.org/publ/work952.htm">2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”</a></li>
 </ul>
-</div>
-<div id="reading-list" class="section level1">
-<h1>Reading List</h1>
-<div id="trading" class="section level2">
-<h2>Trading</h2>
+<div id="background" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Background</h1>
 <ul>
-<li>Iqbal - Volatility; Practical Options Theory</li>
-<li>Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory</li>
-<li>Interest Rate Markets; A Practical Approach to Fixed Income</li>
-<li>Fixed Income Securities; Tools for Today’s Markets</li>
-</ul>
-</div>
-<div id="q-fin" class="section level2">
-<h2>Q-Fin</h2>
+<li>VXO: options data on the S&amp;P 100 index (OEX) <span class="math inline">\(\Rightarrow\)</span> VIX: options data on the S&amp;P 500 index (SPX)
 <ul>
-<li>Lehalle, Laruelle - Market Microstructure in Practice, Second Edition</li>
-<li>Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)</li>
-<li>Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)</li>
-<li>Bouchaud - Theory of financial risk and derivative pricing; From statistical physics to risk management</li>
-<li>Bouchaud - Trades, Quotes and Prices; Financial Markets Under the Microscope</li>
-<li>Spadafora - Theoretical Foundations Quantitative Finance (All the Financial Math You Need to Survive)</li>
-</ul>
-</div>
-<div id="estimation" class="section level2">
-<h2>Estimation</h2>
-<ul>
-<li>Doerfler, Dead Reckoning</li>
-<li>Migdal</li>
-<li>Wells: Effective Theories in Physics</li>
-</ul>
-</div>
-<div id="bayesian" class="section level2">
-<h2>Bayesian</h2>
-<ul>
-<li>Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data</li>
-<li>McElreath, Statistical rethinking</li>
-<li>Bayesian Essentials with R, Second Edition</li>
-</ul>
-</div>
-<div id="physics" class="section level2">
-<h2>Physics</h2>
-<ul>
-<li>Becker-Becker-Schwarz<br />
-</li>
-<li>CFT for hep-ph</li>
-<li>Hollowood: Renormalization Group and Fixed Points in QFT</li>
-</ul>
-</div>
-<div id="math" class="section level2">
-<h2>Math</h2>
-<ul>
-<li>Lenister’s Basic Category Theory</li>
-</ul>
-</div>
-<div id="fun" class="section level2">
-<h2>Fun</h2>
-<ul>
-<li>A Short Journey from Quarks to the Universe</li>
-</ul>
-</div>
-</div>
-<div id="archive" class="section level1">
-<h1>Archive</h1>
-<div id="q-fin.tr" class="section level2">
-<h2>[q-fin.TR]</h2>
-<ul>
-<li><a href="https://arxiv.org/abs/2303.08867">2023, A Bayesian derivation of the square root law of market impact</a>
-<ul>
-<li><a href="https://osf.io/h6dex">Hiroki 2020 A Brief Introductory Review of Information Thermodynamic</a></li>
+<li>a weighted average of option prices across all strikes <strong><em>at two nearby maturities</em></strong>.</li>
 </ul></li>
-<li><a href="https://arxiv.org/abs/2302.00846">2023, A time-dependent Markovian model of a limit order book</a></li>
-<li><a href="https://arxiv.org/abs/2301.13505">2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow</a></li>
+<li>to use options on the underlying S&amp;P 500 index to define valuation bounds on <strong><em>VIX futures</em></strong></li>
+<li>to exploit information in the underlying <strong><em>SPX options market</em></strong> and <strong><em>VIX futures</em></strong> to price <strong><em>options on the new VIX</em></strong></li>
 </ul>
 </div>
-<div id="aleph" class="section level2">
-<h2>[Aleph]</h2>
-<ul>
-<li><a href="https://www.bis.org/publ/work952.htm">2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”</a></li>
-<li><a href="https://arxiv.org/abs/2304.02356">2023, Unifying Market Microstructure and Dynamic Asset Pricing</a></li>
-<li><a href="https://arxiv.org/abs/2304.06877">2023, Why Topological Data Analysis Detects Financial Bubbles?</a></li>
-</ul>
-</div>
-</div>
-<div id="r-learning" class="section level1">
-<h1>R Learning</h1>
-<div id="must-read" class="section level2">
-<h2>Must-Read</h2>
-<ul>
-<li><a href="http://modern-rstats.eu/">Modern R with the tidyverse</a></li>
-<li><a href="https://r4ds.had.co.nz/model-basics.html">R for Data Science</a></li>
-<li><a href="https://rc2e.com/timeseriesanalysis#recipe-id085">R Cookbook 2ed</a></li>
-<li><a href="https://www.oreilly.com/library/view/r-for-everyone/9780134546988/">R for Everyone: Advanced Analytics and Graphics, 2nd Edition</a></li>
-</ul>
-</div>
-<div id="self-study" class="section level2">
-<h2>Self-Study</h2>
-<ul>
-<li><a href="https://business-science.github.io/tidyquant/">tidyquant</a>
-<ul>
-<li><a href="https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html">Intro</a></li>
-</ul></li>
-<li><a href="https://r-pkgs.org/">R Packages (2e)</a></li>
-<li><a href="https://github.com/blottb7/tick-data/">blottb7/tick-data/</a></li>
-</ul>
-</div>
-</div>
-<div id="ref" class="section level1">
-<h1>Ref</h1>
-<ul>
-<li>R Markdown
-<ul>
-<li>Diagrams:
-<ul>
-<li><a href="https://remlapmot.github.io/mrdags/">DAG, DiagrammeR etc</a></li>
-<li><a href="https://stackoverflow.com/questions/27880563/tikz-in-r-markdown">Tikz vs Rmd</a></li>
-</ul></li>
-<li><a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html">R Markdown: The Definitive Guide</a></li>
-<li><a href="https://nceas.github.io/training-rmarkdown-website/tutorial.html" class="uri">https://nceas.github.io/training-rmarkdown-website/tutorial.html</a></li>
-<li><a href="https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html" class="uri">https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html</a></li>
-<li><a href="https://p8105.com/making_websites.html" class="uri">https://p8105.com/making_websites.html</a></li>
-</ul></li>
-</ul>
+<div id="vix" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> VIX</h1>
+<p><span class="math display">\[
+VIX(t,T) = \frac{2}{T-t} \bigg(\sum_{i} \frac{\Delta K}{K^2_i} e^{r_i (T-t)} O_i(K_i,T)  \bigg) - \frac{1}{T-t}\bigg[\frac{F_i}{K_0}-1\bigg]^2
+\]</span></p>
+<blockquote>
+<p>The new VIX squared approximates the conditional risk-neutral expectation of the annualized return variance over the next 30 calendar days: <span class="math display">\[
+VIX(t,T)^2 \approx E^Q_t\bigg[{RV}_{t,t+30}\bigg]
+\]</span></p>
+</blockquote>
 </div>
 
 

@@ -1,0 +1,73 @@
+---
+title: '2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”'
+output:
+  html_document:
+    toc: yes
+    number_sections: yes
+bibliography: ./bib/stats.bib
+link-citations: yes
+---
+
+```{r echo=FALSE}
+# A minimal plot
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = LR]
+
+a
+b
+c
+
+a -> b -> c
+}")
+```
+
+
+# Further 
+- [Dong 2016, Price impact of ETP demand on underliers](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2788084)
+- [Carr and Wu, 2006, A tale of two indices.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=871729)
+- [Martin 2017 What is the Expected Return on the Market?](https://academic.oup.com/qje/article/132/1/367/2724543)
+- [Breeden and Litzenberger, 1978 Prices of state contingent claims implicit in options prices](https://www.jstor.org/stable/2352653)
+
+# Abstract {-}
+
+- ETF price impact, for vix and commodity asset classes
+  - There is a model-indep replicate on the VIX futures: so the diff will isolate the trade component (anything that is not explained by the replicate)
+  - Assuming the trade component comes from ETF, then we have the following breakdown of the ETF trade-induced mismatch:
+    1. Leverage rebalancing
+      * the largest one!! trending $\Rightarrow$ positive feedback
+    2. Calendar rebalancing
+    3. Flow rebalancing (NAV flow)
+    
+# Intro
+- > Passive demand for ETF: \$0.2T at 2004 $\Rightarrow$ \$6T at 2019
+  - retail and institutional
+  - commoditization of assets through ETFs
+    - Pro: cost-efficient
+    - Con: less information content in price, crowding trading/liquidity run
+  - > "distorting impact on underlying assets", aka non-fundamental
+price distortions
+    - How to measure?   
+      - > "price reversals or variance ratios"
+- The most ETF-dominated asset classes: volatility (VIX) and commodities      
+  - For VIX, ETF accounts for 40%
+  - Testing 
+    - > "whether the ETF-influenced futures price is informative
+about the fundamental cash flow (spot price) at expiration."
+    - > "specific predictions about the price impact of ETFs on the slope of the
+futures curve"
+
+- Summary
+  1. > "Trading demand from ETFs (called ETF demand hereafter) is strongly related to futures prices at a daily frequency"
+  2. > "ETF price impact is not related to price discovery but manifests itself through an increase in the non-fundamental part of prices"
+    - > "use the definition of variance and construct a synthetic futures contract from option prices on the S&P 500 Index and VIX."
+      - > "the difference between the prices of the two contracts is strongly related to ETF demand and call this difference the ETF futures gap (EFG)."
+      - > "A simple strategy of trading VIX futures based on the sign of the EFG delivers a Sharpe ratio of 1.78."
+      
+  3. the source of the EFG: calendar rebalancing, flow rebalancing, and leverage rebalancing.
+      - > "Leveraged ETFs mechanically have to buy the underlying asset after price increases and sell it after price decreases, similar to agents hedging gamma."
+      - > "ETF demand and price changes reinforce each other, pushing prices away from fundamentals. Trading against leveraged ETFs is, in essence, providing liquidity to investors with short horizons, who follow momentum-like strategy. This type of trading exposes ***arbitrageurs*** negatively to variance."
+      - > "Calendar rebalancing inherits part of the non-linearity of leverage rebalancing and also mechanically exposes arbitrageurs to the risk of widening price discrepancies since ***ETF counterparties*** have to close futures positions before expiration."
+      
+      
+  

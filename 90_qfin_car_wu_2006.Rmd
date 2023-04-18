@@ -1,0 +1,29 @@
+---
+title: "Carr and Wu, 2006, A tale of two indices"
+output:
+  html_document:
+    toc: yes
+    number_sections: yes
+bibliography: ./bib/stats.bib
+link-citations: yes
+---
+
+Reading [Carr and Wu, 2006, A tale of two indices.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=871729)
+
+- Following up from [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
+
+# Background
+- VXO: options data on the S&P 100 index (OEX) $\Rightarrow$ VIX: options data on the S&P 500 index (SPX)
+  - a weighted average of option prices across all strikes ***at two nearby maturities***.
+- to use options on the underlying S&P 500 index to define valuation bounds on ***VIX futures***
+- to exploit information in the underlying ***SPX options market*** and ***VIX futures*** to price ***options on the new VIX***
+
+# VIX
+$$
+VIX(t,T) = \frac{2}{T-t} \bigg(\sum_{i} \frac{\Delta K}{K^2_i} e^{r_i (T-t)} O_i(K_i,T)  \bigg) - \frac{1}{T-t}\bigg[\frac{F_i}{K_0}-1\bigg]^2
+$$
+
+> The new VIX squared approximates the conditional risk-neutral expectation of the annualized return variance over the next 30 calendar days:
+$$
+VIX(t,T)^2 \approx E^Q_t\bigg[{RV}_{t,t+30}\bigg]
+$$
