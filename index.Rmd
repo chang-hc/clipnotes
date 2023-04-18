@@ -88,20 +88,21 @@ output:
 
 
 # Ref 
-- R Markdown 
+
+## R Markdown 
   - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
   - https://nceas.github.io/training-rmarkdown-website/tutorial.html
   - https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html
   - https://p8105.com/making_websites.html
   
-
-- Diagrams:
+## Diagrams
   - [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
   - [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
   
-- TikZ-cd
-  - [TikZ-cd editor](https://tikzcd.yichuanshen.de/)
-  - [Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
+## TikZ-cd
+  - <https://ctan.org/pkg/tikz-cd?lang=en>
+  - [ [UI] TikZ-cd editor](https://tikzcd.yichuanshen.de/)
+  - [ [pdf] Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
 
 ```{tikz, echo=FALSE}
 \usetikzlibrary{cd}
@@ -125,7 +126,7 @@ T
 \end{tikzcd}
 ```  
 
-- TikZ per se
+## TikZ per se
   - <https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ>
   - <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
   
