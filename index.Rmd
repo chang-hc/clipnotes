@@ -10,11 +10,6 @@ output:
 ---
 
 
-
-
-
-
-
 # Market How-To
 - Maintain the daily market watch
 - Set up the R backend
@@ -41,27 +36,7 @@ output:
   - Spadafora - Theoretical Foundations Quantitative Finance (All the Financial Math You Need to Survive)
 
   
-## Estimation
-  - Doerfler, Dead Reckoning
-  - Migdal
-  - Wells: Effective Theories in Physics
 
-## Bayesian
-  - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
-  - McElreath, Statistical rethinking
-  - Bayesian Essentials with R, Second Edition
-
-## Physics
-  - Becker-Becker-Schwarz  
-  - CFT for hep-ph
-  - Hollowood: Renormalization Group and Fixed Points in QFT
-  
-## Math 
-  - Lenister's Basic Category Theory
-
-## Fun
-  -  A Short Journey from Quarks to the Universe 
-  
 # Archive
 
 ## [q-fin.TR]
@@ -70,7 +45,7 @@ output:
   - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
   - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
 
-## [Alpeh]  
+## $\aleph_{\alpha}$  
   - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
   - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
   - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
@@ -189,4 +164,28 @@ foo \arrow[r, shift left, "q_{foobar}"]
             edge [dashed,-] (m-2-1);
 \end{tikzpicture}
 ```
+  
+
+# Long-Term  
+  
+## Estimation
+  - Doerfler, Dead Reckoning
+  - Migdal
+  - Wells: Effective Theories in Physics
+
+## Bayesian
+  - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
+  - McElreath, Statistical rethinking
+  - Bayesian Essentials with R, Second Edition
+
+## Physics
+  - Becker-Becker-Schwarz  
+  - CFT for hep-ph
+  - Hollowood: Renormalization Group and Fixed Points in QFT
+  
+## Math 
+  - Lenister's Basic Category Theory
+
+## Fun
+  -  A Short Journey from Quarks to the Universe 
   
