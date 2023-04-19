@@ -1,0 +1,40 @@
+---
+title: Leinster - Basic Category 
+output: 
+  html_document:
+    toc: true
+    number_sections: true      
+bibliography: [./bib/math.bib ]
+link-citations: true 
+---
+
+
+Reading [@leinster2014basic] 
+
+# Wet the appepite, Pattern and "universal property" 
+- "the lowest common multiple of two numbers" $\sim$ "the direct sum of two vector spaces"?
+
+
+::: {.example name="Unique"}
+let $\mathcal{I}$ be a set with only one element, then this set has the following special property:   for all other set $\mathcal{X}$, there ___exists___ a ___unique___ map from $\mathcal{X}$ to $\mathcal{I}$.
+:::
+
+Indeed, let $\mathcal{X}$ be any set, then we can prove:
+
+- [x] Existence: we can make a $f: \mathcal{X} \rightarrow \mathcal{I}$ such that  $\forall a \in \mathcal{X}$ we set $f(a) \equiv e$, for  $\mathcal{I} = \{e\}$
+
+- [x] Uniqueness: there is no way to make two such different $f$'s: if not then we must have $f_1(a)!=f_2(a)$ for certain $a\in\mathcal{X}$, but we know the result will alway be $e\in\mathcal{I}$ already.
+
+
+```{tikz,echo=FALSE,fig.cap="The special property of $(V,i)$"}
+\usetikzlibrary{cd}
+\begin{tikzcd}
+S \arrow[rd,"\forall \mathrm{functions} f"'] 
+\arrow[r, "i" red] & \color{red}V \arrow[d, "\exists! \mathrm{linear} \hat{f}"]\\
+&\forall W\\
+\end{tikzcd}
+```  
+
+
+# Reference
+
