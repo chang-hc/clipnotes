@@ -10,12 +10,12 @@ output:
 ---
 
 
-# Market How-To
+# To-Do
+
 - Maintain the daily market watch
 - Set up the R backend
 
-
-# Reading List 
+# Market How-To
 
 
 ## Trading
@@ -37,35 +37,34 @@ output:
 
   
 
-# Archive
+## Archive
 
-## [q-fin.TR]
+### [q-fin.TR]
   - [2023, A Bayesian derivation of the square root law of market impact](https://arxiv.org/abs/2303.08867)
     -   [Hiroki 2020 A Brief Introductory Review of Information Thermodynamic](https://osf.io/h6dex)
   - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
   - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
 
-## $\aleph_{\alpha}$  
+### $\aleph_{\alpha}$  
   - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
   - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
   - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
 
-# R Learning
+# R Ref
 
-## Must-Read
-- [Modern R with the tidyverse](http://modern-rstats.eu/)
-- [R for Data Science](https://r4ds.had.co.nz/model-basics.html)
-- [R Cookbook 2ed](https://rc2e.com/timeseriesanalysis#recipe-id085)
-- [R for Everyone: Advanced Analytics and Graphics, 2nd Edition](https://www.oreilly.com/library/view/r-for-everyone/9780134546988/)
-
-##  Self-Study
+##  Case-Study
 - [tidyquant](https://business-science.github.io/tidyquant/)
   - [Intro](https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html)
 - [R Packages (2e)](https://r-pkgs.org/)
 - [blottb7/tick-data/](https://github.com/blottb7/tick-data/)
 
 
-# Ref 
+## Morden R: Must-Read
+- [Modern R with the tidyverse](http://modern-rstats.eu/)
+- [R for Data Science](https://r4ds.had.co.nz/model-basics.html)
+- [R Cookbook 2ed](https://rc2e.com/timeseriesanalysis#recipe-id085)
+- [R for Everyone: Advanced Analytics and Graphics, 2nd Edition](https://www.oreilly.com/library/view/r-for-everyone/9780134546988/)
+
 
 ## R Markdown 
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
@@ -166,7 +165,7 @@ foo \arrow[r, shift left, "q_{foobar}"]
 ```
   
 
-# Long-Term  
+# Larger than Life 
   
 ## Estimation
   - Doerfler, Dead Reckoning
