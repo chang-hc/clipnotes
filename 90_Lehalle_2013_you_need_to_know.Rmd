@@ -11,6 +11,8 @@ link-citations: yes
 Reading [@lehalle2013market]
 
 
+# Market Microstructure Modeling and Payoff Understanding are Key Elements of Quantitative Trading
+1.  
 
 
 
