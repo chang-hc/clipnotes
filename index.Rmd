@@ -10,7 +10,7 @@ output:
 
 
 - [x] Exercise: 200^2^ x 20^2^
-- [x] Daily Ritual: Writing
+- [x] Daily Noting + Writing
 - [x] Stretch Your Mind: Latin + Category
 
 
