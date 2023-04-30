@@ -22,6 +22,8 @@ navbar:
       menu:
         - text: "R Reference"
           href: 99_cheatsheet_R_ref.html  
+        - text: "Rmd and Tikz"
+          href: 99_cheatsheet_tikz.html            
     - text: "Physics"
       icon: fa-gear
       menu:

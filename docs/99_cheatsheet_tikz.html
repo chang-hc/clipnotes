@@ -13,7 +13,7 @@
 
 <meta name="date" content="2023-04-30" />
 
-<title>Defence Against the Dark Arts</title>
+<title>Rmd and Tikz</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -417,38 +417,106 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Defence Against the Dark Arts</h1>
+<h1 class="title toc-ignore">Rmd and Tikz</h1>
 <h4 class="author">HCC</h4>
 <h4 class="date">2023-04-30</h4>
 
 </div>
 
 
-<div id="aleph_alpha" class="section level1">
-<h1><span class="math inline">\(\aleph_{\alpha}\)</span></h1>
+<div id="diagrams" class="section level1">
+<h1>Diagrams</h1>
 <ul>
-<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4291984">Explainable AI in Futures</a></li>
-<li><a href="https://www.bis.org/publ/work952.htm">2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”</a></li>
-<li><a href="https://arxiv.org/abs/2304.02356">2023, Unifying Market Microstructure and Dynamic Asset Pricing</a></li>
-<li><a href="https://arxiv.org/abs/2304.06877">2023, Why Topological Data Analysis Detects Financial Bubbles?</a></li>
+<li><a href="https://remlapmot.github.io/mrdags/">DAG, DiagrammeR etc</a></li>
+<li><a href="https://stackoverflow.com/questions/27880563/tikz-in-r-markdown">Tikz vs Rmd</a></li>
 </ul>
 </div>
-<div id="archive" class="section level1">
-<h1>Archive</h1>
+<div id="latex" class="section level1">
+<h1>Latex</h1>
 <ul>
-<li><a href="https://doi.org/10.2307/1913210">Kyle, A. S. (1985). Continuous Auctions and Insider Trading. Econometrica, 53(6), 1315. doi:10.2307/1913210</a></li>
+<li><a href="https://www.latex4technics.com/codesearch?q=tikz" class="uri">https://www.latex4technics.com/codesearch?q=tikz</a></li>
 </ul>
-<div id="q-fin.tr" class="section level3">
-<h3>[q-fin.TR]</h3>
+</div>
+<div id="tikz-cd" class="section level1">
+<h1>TikZ-cd</h1>
 <ul>
-<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2722524">2016, Market Microstructure Invariance: Empirical Hypotheses</a></li>
-<li><a href="https://arxiv.org/abs/2303.08867">2023, A Bayesian derivation of the square root law of market impact</a>
-<ul>
-<li><a href="https://osf.io/h6dex">Hiroki 2020 A Brief Introductory Review of Information Thermodynamic</a></li>
-</ul></li>
-<li><a href="https://arxiv.org/abs/2302.00846">2023, A time-dependent Markovian model of a limit order book</a></li>
-<li><a href="https://arxiv.org/abs/2301.13505">2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow</a></li>
+<li><a href="https://ctan.org/pkg/tikz-cd?lang=en" class="uri">https://ctan.org/pkg/tikz-cd?lang=en</a></li>
+<li><a href="https://tikzcd.yichuanshen.de/">[UI] TikZ-cd editor</a></li>
+<li><a href="https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf">[pdf] Commutative diagrams with TikZ</a></li>
 </ul>
+<pre class="tex"><code>\usetikzlibrary{cd}
+\begin{tikzcd}
+A \arrow[rd] \arrow[r] &amp; B \\
+&amp;C\\
+\end{tikzcd}</code></pre>
+<p><img src="99_cheatsheet_tikz_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="tex"><code>\usetikzlibrary{cd}
+\begin{tikzcd}
+T
+\arrow[drr, bend left, &quot;x&quot;]
+\arrow[ddr, bend right, &quot;y&quot;]
+\arrow[dr, dotted, &quot;{(x,y)}&quot; description] &amp; &amp; \\
+&amp; X \times_Z Y \arrow[r, &quot;p&quot;] \arrow[d, &quot;q&quot;]
+&amp; X \arrow[d, &quot;f&quot;] \\
+&amp; Y \arrow[r, &quot;g&quot;]
+&amp; Z
+\end{tikzcd}</code></pre>
+<p><img src="99_cheatsheet_tikz_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<ul>
+<li><a href="https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/" class="uri">https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/</a></li>
+</ul>
+<pre class="tex"><code>\usetikzlibrary{cd}
+ \tikzcdset{every label/.append style = {font = \tiny}}
+\begin{tikzcd}[row sep=50, column sep=50]
+foo \arrow[r, shift left, &quot;q_{foobar}&quot;]
+\arrow[r, &lt;-, shift right, swap, &quot;q_{barfoo}&quot;]
+\arrow[dr, shift right=2]
+&amp; bar \arrow[d, shift left,&quot;q_{barqux}&quot;] \\
+&amp; qux \arrow[u, shift left, &quot;q_{quxbar}&quot;]
+\arrow[ul, shift left=4, &quot;q_{quxfoo}&quot;]
+\end{tikzcd}</code></pre>
+<p><img src="99_cheatsheet_tikz_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<div id="tikz-per-se" class="section level3">
+<h3>TikZ per se</h3>
+<ul>
+<li><a href="https://tikz.dev/" class="uri">https://tikz.dev/</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ" class="uri">https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ</a></li>
+<li><a href="https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd" class="uri">https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd</a></li>
+</ul>
+<pre class="tex"><code>\usetikzlibrary{arrows}
+\begin{tikzpicture}[node distance=2cm, auto,&gt;=latex&#39;, thick, scale = 0.5]
+\node (P) {$P$};
+\node (B) [right of=P] {$B$};
+\node (A) [below of=P] {$A$};
+\node (C) [below of=B] {$C$};
+\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
+\draw[-&gt;] (P) to node {$f$} (B);
+\draw[-&gt;] (P) to node [swap] {$g$} (A);
+\draw[-&gt;] (A) to node [swap] {$f$} (C);
+\draw[-&gt;] (B) to node {$g$} (C);
+\draw[-&gt;, bend right] (P1) to node [swap] {$\hat{g}$} (A);
+\draw[-&gt;, bend left] (P1) to node {$\hat{f}$} (B);
+\draw[-&gt;, dashed] (P1) to node {$k$} (P);
+\end{tikzpicture}</code></pre>
+<p><img src="99_cheatsheet_tikz_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<ul>
+<li><a href="https://texample.net/tikz/examples/commutative-diagram-tikz/" class="uri">https://texample.net/tikz/examples/commutative-diagram-tikz/</a></li>
+</ul>
+<pre class="tex"><code>\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
+  {
+     F_t(x) &amp; F(x) \\
+     A_t &amp; A \\
+  };
+  \path[-stealth]
+    (m-1-1) edge node [left] {$\mathcal{B}_X$} (m-2-1)
+            edge [double] node [below] {$\mathcal{B}_t$} (m-1-2)
+    (m-2-1.east|-m-2-2) edge node [below] {$\mathcal{B}_T$}
+            node [above] {$\exists$} (m-2-2)
+    (m-1-2) edge node [right] {$\mathcal{B}_T$} (m-2-2)
+            edge [dashed,-] (m-2-1);
+\end{tikzpicture}</code></pre>
+<p><img src="99_cheatsheet_tikz_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 </div>
 </div>
 
