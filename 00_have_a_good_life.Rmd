@@ -1,0 +1,35 @@
+---
+title: "Have a Good Life"
+author: "HCC"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+---
+
+# Stoic
+- Irvine, A Guide to the Good Life: The Ancient Art of Stoic Joy
+
+# Larger than Life 
+## Estimation
+  - Doerfler, Dead Reckoning
+  - Migdal
+  - Wells: Effective Theories in Physics
+
+## Bayesian
+  - Bayesian Statistical Modeling With Stan, R, and Python
+  - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
+  - McElreath, Statistical rethinking
+  - Bayesian Essentials with R, Second Edition
+
+## Physics
+  - Becker-Becker-Schwarz  
+  - CFT for hep-ph
+  - Hollowood: Renormalization Group and Fixed Points in QFT
+  
+## Math 
+  - Lenister's Basic Category Theory
+
+## Fun
+  - Complex Integration; A Compendium of Smart and Little-Known Techniques for Evaluating Integrals and Sums
+  -  A Short Journey from Quarks to the Universe 

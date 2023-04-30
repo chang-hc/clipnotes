@@ -8,8 +8,17 @@ output:
 navbar:
   title: "Clipnotes Galore!"
   left:
-    #- text: "Roadmap"
-    #  href: index.html
+    - text: "Roadmap"
+      icon: fa-gear
+      menu:
+        - text: "Home"
+          href: index.html
+        - text: '---'  
+        - text: "Defence Against Dark Art"
+          href: 00_aginst_dark_art.html            
+        - text: '---'  
+        - text: "Have a good life!"
+          href: 00_have_a_good_life.html  
       
     - text: "Cheatsheet"
       icon: fa-gear
@@ -21,13 +30,13 @@ navbar:
       menu:
         - text: "Becker-Becker-Schwarz"
         - text: 'ch00.00'
-          href: 00_becker2006string.html
+          href: 01_becker2006string.html
         - text: '---'
         - text: "CFT for Particle Physicts"
           href: 01_CFT4hep-ph.html
         - text: '---'
         - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
-          href: 02_Hollowood_RGinQFTs.html
+          href: 01_Hollowood_RGinQFTs.html
     - text: "Bayesian"
       icon: fa-gear
       menu:

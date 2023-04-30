@@ -11,7 +11,7 @@
 
 
 
-<title>Hollowood: Renormalization Group and Fixed Points in QFT</title>
+<title>Becker-Becker-Schwarz {#BBS}</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -346,6 +346,28 @@ div.tocify {
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-gear"></span>
      
+    Roadmap
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="00_aginst_dark_art.html">Defence Against Dark Art</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="00_have_a_good_life.html">Have a good life!</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-gear"></span>
+     
     Cheatsheet
      
     <span class="caret"></span>
@@ -367,7 +389,7 @@ div.tocify {
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-header">Becker-Becker-Schwarz</li>
     <li>
-      <a href="00_becker2006string.html">ch00.00</a>
+      <a href="01_becker2006string.html">ch00.00</a>
     </li>
     <li class="divider"></li>
     <li>
@@ -375,7 +397,7 @@ div.tocify {
     </li>
     <li class="divider"></li>
     <li>
-      <a href="02_Hollowood_RGinQFTs.html">Hollowood: Renormalization Group and Fixed Points in QFT</a>
+      <a href="01_Hollowood_RGinQFTs.html">Hollowood: Renormalization Group and Fixed Points in QFT</a>
     </li>
   </ul>
 </li>
@@ -416,40 +438,105 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Hollowood: Renormalization Group and Fixed Points in QFT</h1>
+<h1 class="title toc-ignore">Becker-Becker-Schwarz {#BBS}</h1>
 
 </div>
 
 
-<p>Reading <span class="citation">(<a href="#ref-hollowood2013renormalization" role="doc-biblioref">Hollowood 2013</a>)</span></p>
-<div id="ch1" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Ch1</h1>
-<blockquote>
-<p>The way that phenomena on different distance, or equivalently energy/momentum, scales relate to one another.</p>
-</blockquote>
-<blockquote>
-<p>At low energies, the point is not that the quarks do not matter, but the only way that they do matter is to <strong><em>set various coupling constants and masses</em></strong> in the effective theory where the manifest degrees-of-freedom are the hadrons and mesons.</p>
-</blockquote>
-<blockquote>
-<p>The description of the physical world on distance scales <span class="math inline">\(&gt;\mu^{-1}\)</span> is most efficiently described by a theory where the degrees-of-freedom are defined around the scale <span class="math inline">\(\mu^{-1}\)</span>.</p>
-</blockquote>
-<p>… Aka other observables defined at the scale of <span class="math inline">\(\mu^{-1}\)</span>.</p>
-<blockquote>
-<p>As long as there are <strong><em>only a few</em></strong> effective variables and a few cou- plings, these details can be fixed experimentally …</p>
-</blockquote>
+<p>Reading Ch1 of <span class="citation">(<a href="#ref-becker2006string" role="doc-biblioref">Becker, Becker, and Schwarz 2006</a>)</span></p>
+<div id="why" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Why?</h1>
+<p>One important feature is the ability to generate GR via its dynamics.</p>
+<ul>
+<li>“QFT <span class="math inline">\(\rightarrow\)</span> ST” <span class="math inline">\(\Rightarrow\)</span> “World-lines<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <span class="math inline">\(\rightarrow\)</span> World-sheet”
+<ul>
+<li>QFT interaction: local singularties on the junctions of different lines ending-afar</li>
+<li>ST interation: topology on the whole sheet
+<ul>
+<li>Hence,the UV divergence “must”(if it can be done consistently at all) be resolved in the string picture because above the string scale the smooth nature of the string dynamics resolves the sigularity.</li>
+</ul></li>
+</ul></li>
+</ul>
+<div id="two-formulations" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Two formulations</h2>
+<div id="nambu-go-action" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Nambu-Go Action:</h3>
 <p><span class="math display">\[
-\mathcal{L}(\{g_i\}) = \int [\mathcal{D} \phi] e^{i S[ \phi, \{g_i\}]}
-\]</span> First RG <span class="math display">\[
-F(g_i(\mu);l)_{\mu} \overset{!}{=}  F(g_i(\mu&#39;);l)_{\mu&#39;}
+S_{p} = -T_{p}V
+\]</span> ### String Sigma Model: <span class="math display">\[
+S_{\sigma} = - \frac{T}{2} \int \sqrt{-h} h^{\alpha\beta}\eta_{\mu\nu}
+\partial_{\alpha}X^{\mu}
+\partial_{\beta}X^{\nu},
 \]</span></p>
+<p>where - <span class="math inline">\(h^{\alpha\beta}(\sigma, \tau)\)</span> the auxiliary<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> world-sheet metric, - <span class="math inline">\(h=\text{det} \,\, h_{\alpha\beta}\)</span>, - <span class="math inline">\(h^{\alpha\beta}\)</span> is the inverse of <span class="math inline">\(h_{\alpha\beta}\)</span>, as <span class="math inline">\(h^{\alpha\beta} = [h^{-1}]^{\alpha\beta}\)</span>, - <span class="math inline">\(X^{\mu}(\sigma, \tau)\)</span>, the embedding of the world-sheet into the ambient space-time, aka - <span class="math inline">\((\sigma, \tau) \in \mathcal{M}^2 \rightarrow X^{\mu} \in \mathcal{R}^\mathcal{D}\)</span></p>
+</div>
+</div>
+<div id="the-equvalence-of-the-two" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> The equvalence of the two</h2>
+<p>Classically, we can use <span class="math inline">\(S_\sigma\)</span> to find the EOM of <span class="math inline">\(h_{\alpha\beta}\)</span>, and it can be shown that <span class="math inline">\(S_\sigma\)</span> localized at those <span class="math inline">\(h\)</span>-locale will reccover the the Nambu-Goto on <span class="math inline">\(X^\mu\)</span></p>
+<p>However, quantum mechanically, we have the <span class="math inline">\(\hbar\)</span> to deal with, as well as the gauge-fixing and what not =&gt; (Spoiler alert!!) All in all, we will find that there is a conformal anomaly unless <span class="math inline">\(mathcal{D}=26\)</span> for bosonic strings, and <span class="math inline">\(\mathcal{D}=10\)</span> for superstrings</p>
+<div id="first-superstring-revolution-1984" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> First Superstring revolution, 1984</h3>
+<p>The discovery: Q-consistency of <span class="math inline">\(\mathcal{N}=1\)</span> 10-dim SST requires a local Yang-Mills gauge symmetry on either <span class="math inline">\(SO(32)\)</span> or <span class="math inline">\(E_8\times E_8\)</span> (cancelation of q-anomalies, see Ch5, also with <span class="math inline">\(U(1)^{496}\)</span> and <span class="math inline">\(E_8 \times U(1)^{248}\)</span>)</p>
+<ul>
+<li><span class="math inline">\(\mathcal{N}=2\)</span>
+<ul>
+<li>type II: we have both left- and right-moving modes, and we get to choose the handedness on each, either the opposite (IIA) or the same (IIB);</li>
+</ul></li>
+<li><span class="math inline">\(\mathcal{N}=1\)</span>
+<ul>
+<li>type I: for IIB above, we have the left-right symmetry, and we get to mode this symmetery out (orbifold projection), wit the remaining content being type I;</li>
+<li>2 “Heterotic”s: left being left-moving <span class="math inline">\(\mathcal(D)=26\)</span> bosonic strings, right being right-moving <span class="math inline">\(\mathcal(D)=11\)</span> superstrings! The 16 extra dimension on the left must be some tori to have a final consistent (q-anomaly-free) formulation: Two such tori, each corrresponds to <span class="math inline">\(SO(32)\)</span> or <span class="math inline">\(E_8\times E_8\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="second-superstring-revolutionlate-1980s-to-1990s" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Second Superstring revolution,late 1980s to 1990s</h3>
+<p>Too many ultimate theories now…however, T-duality is found to related the twp type-Is and type-IIs! With the nonperturbative S-duality and the opening up of another dimension at strong coupling, we have the final united theory!</p>
+<p>T-duality: two different geometries in the extra dimension are physically q-equivalent! - Example: circle with radius <span class="math inline">\(R\)</span> is the same as circle with radius <span class="math inline">\(\frac{l^2_s}{R}\)</span></p>
+<p>S-duality: <span class="math inline">\(g_s \leftrightarrow \frac{1}{g_s}\)</span></p>
+<ul>
+<li>type-IIB with itself</li>
+<li>type-IA with <span class="math inline">\(\text{Heterotic}|_{SO(32)}\)</span></li>
+<li>How about type-IIA and <span class="math inline">\(\text{Heterotic}|_{E_8 \times E_8}\)</span>?
+<ul>
+<li>they grow an extra dimension of the size of <span class="math inline">\(g_s l_s\)</span>!
+<ul>
+<li>A circle for type-IIA;</li>
+<li>A line interval for <span class="math inline">\(\text{Heterotic}|_{E_8 \times E_8}\)</span> )</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Matrix theory</p>
+<ul>
+<li>A dual description of M-theory in flat 11-dimensional space-time</li>
+<li>QM of N<span class="math inline">\(\times\)</span>N matrices in the large N limit</li>
+</ul>
+<p>F-theory</p>
+<ul>
+<li>We have S-duality opening up type-IIA and <span class="math inline">\(\text{Heterotic}|_{E_8 \times E_8}\)</span> to M-theory … how about others?</li>
+<li>type-IIB has a non-perturbative <span class="math inline">\(SL(2,\mathbb{Z})\)</span>-symmetry – which is naturally associated with a fictitious torus (the modular group of a torus) + type-IIB also has a complex scalar field <span class="math inline">\(\tau\)</span> transforming under <span class="math inline">\(SL(2,\mathbb{Z})\)</span>
+<ul>
+<li>We can see this symmetry geometrically, having an auxiliary two-torus <span class="math inline">\(T^2\)</span> with complex structure <span class="math inline">\(\tau\)</span>.</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </div>
 <div id="reference" class="section level1 unnumbered">
 <h1 class="unnumbered">Reference</h1>
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-hollowood2013renormalization" class="csl-entry">
-Hollowood, Timothy J. 2013. <em>Renormalization Group and Fixed Points: In Quantum Field Theory</em>. Vol. 48. Springer.
+<div id="ref-becker2006string" class="csl-entry">
+Becker, Katrin, Melanie Becker, and John H Schwarz. 2006. <em>String Theory and m-Theory: A Modern Introduction</em>. Cambridge university press.
 </div>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Maybe we need to familar ourselves with the word-line description first: <a href="https://arxiv.org/abs/hep-ph/9205205">Strassler, 1992, Field Theory Without Feynman Diagrams: One-Loop Effective Actions</a>; <a href="https://arxiv.org/abs/1912.10004">Schubert, 2019, Quantum mechanical path integrals in the first quantised approach to quantum field theory</a>; <a href="https://arxiv.org/abs/hep-th/0101036">Schubert, Perturbative Quantum Field Theory in the String-Inspired Formalism</a>; <a href="https://physics.stackexchange.com/questions/522717/worldline-formulation-of-qft">stackexchange: Worldline formulation of QFT</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>the auxiliary here is very apopos: we will gauge its nature later.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 

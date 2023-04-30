@@ -3,8 +3,6 @@ title: "Roadmap"
 author: "HCC"
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     toc: yes
 ---
@@ -44,35 +42,3 @@ output:
   - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
   - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
 
-### $\aleph_{\alpha}$  
-  - [Explainable AI in Futures](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4291984)
-  - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
-  - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
-  - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
-
-
-# Larger than Life 
-  
-## Estimation
-  - Doerfler, Dead Reckoning
-  - Migdal
-  - Wells: Effective Theories in Physics
-
-## Bayesian
-  - Bayesian Statistical Modeling With Stan, R, and Python
-  - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
-  - McElreath, Statistical rethinking
-  - Bayesian Essentials with R, Second Edition
-
-## Physics
-  - Becker-Becker-Schwarz  
-  - CFT for hep-ph
-  - Hollowood: Renormalization Group and Fixed Points in QFT
-  
-## Math 
-  - Lenister's Basic Category Theory
-
-## Fun
-  - Complex Integration; A Compendium of Smart and Little-Known Techniques for Evaluating Integrals and Sums
-  -  A Short Journey from Quarks to the Universe 
-  
