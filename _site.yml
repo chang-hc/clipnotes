@@ -11,9 +11,6 @@ navbar:
     - text: "Roadmap"
       icon: fa-gear
       menu:
-        - text: "Home"
-          href: index.html
-        - text: '---'  
         - text: "Defence Against Dark Art"
           href: 00_aginst_dark_art.html            
         - text: '---'  

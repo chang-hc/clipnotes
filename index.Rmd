@@ -33,12 +33,3 @@ output:
 
   
 
-## Archive
-
-### [q-fin.TR]
-  - [2016, Market Microstructure Invariance: Empirical Hypotheses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2722524)
-  - [2023, A Bayesian derivation of the square root law of market impact](https://arxiv.org/abs/2303.08867)
-    -   [Hiroki 2020 A Brief Introductory Review of Information Thermodynamic](https://osf.io/h6dex)
-  - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
-  - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
-
