@@ -1,5 +1,5 @@
 ---
-title: "Roadmap"
+title: "Quick Wins of the Day"
 author: "HCC"
 date: "`r Sys.Date()`"
 output:
@@ -9,8 +9,13 @@ output:
 
 
 
-# Market How-To
+- [x] Exercise: 200^2^ x 20^2^
+- [x] Daily Ritual: Writing
+- [x] Stretch Your Mind: Latin + Category
 
+
+
+# Market 
 
 ## Basic
   - Iqbal - Volatility; Practical Options Theory

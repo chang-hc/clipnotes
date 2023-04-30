@@ -12,7 +12,7 @@ navbar:
       icon: fa-gear
       menu:
         - text: "Defence Against Dark Art"
-          href: 00_aginst_dark_art.html            
+          href: 00_aginst_dark_arts.html            
         - text: '---'  
         - text: "Have a good life!"
           href: 00_have_a_good_life.html  
