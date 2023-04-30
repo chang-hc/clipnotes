@@ -41,6 +41,11 @@ navbar:
       menu:
         - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
           href: 30_Barreda_Silbert_2023.html
+    - text: "Reading"
+      icon: fa-gear
+      menu:
+        - text: 'Luck Factors'
+          href: 50_reading_luck_factors.html
 
 
   right:

@@ -1,0 +1,16 @@
+---
+title: "Luck Factors"
+author: "HCC"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+---
+
+
+# 4 How-to
+
+1. Enhance the field range, aka try-and-try-again
+2. Relax just so to pick up the subtle cues
+3. Expect the best: so you actually take the risk $\Rightarrow$ try-and-try-again
+4. Turn the downside up $\Rightarrow$ try-and-try-again
