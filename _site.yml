@@ -8,8 +8,14 @@ output:
 navbar:
   title: "Clipnotes Galore!"
   left:
-    - text: "Roadmap"
-      href: index.html
+    #- text: "Roadmap"
+    #  href: index.html
+      
+    - text: "Cheatsheet"
+      icon: fa-gear
+      menu:
+        - text: "R Reference"
+          href: 99_cheatsheet_R_ref.html  
     - text: "Physics"
       icon: fa-gear
       menu:

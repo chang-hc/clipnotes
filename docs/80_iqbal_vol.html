@@ -11,7 +11,7 @@
 
 
 
-<title>Carr and Wu, 2006, A tale of two indices</title>
+<title>Iqbal - Volatility; Practical Options Theory</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -62,6 +62,28 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 
 
@@ -394,36 +416,89 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Carr and Wu, 2006, A tale of two indices</h1>
+<h1 class="title toc-ignore">Iqbal - Volatility; Practical Options Theory</h1>
 
 </div>
 
 
-<p>Reading <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=871729">Carr and Wu, 2006, A tale of two indices.</a></p>
-<ul>
-<li>Following up from <a href="https://www.bis.org/publ/work952.htm">2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”</a></li>
-</ul>
-<div id="background" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Background</h1>
-<ul>
-<li>VXO: options data on the S&amp;P 100 index (OEX) <span class="math inline">\(\Rightarrow\)</span> VIX: options data on the S&amp;P 500 index (SPX)
-<ul>
-<li>a weighted average of option prices across all strikes <strong><em>at two nearby maturities</em></strong>.</li>
-</ul></li>
-<li>to use options on the underlying S&amp;P 500 index to define valuation bounds on <strong><em>VIX futures</em></strong></li>
-<li>to exploit information in the underlying <strong><em>SPX options market</em></strong> and <strong><em>VIX futures</em></strong> to price <strong><em>options on the new VIX</em></strong></li>
-</ul>
-</div>
-<div id="vix" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> VIX</h1>
-<p><span class="math display">\[
-VIX(t,T) = \frac{2}{T-t} \bigg(\sum_{i} \frac{\Delta K}{K^2_i} e^{r_i (T-t)} O_i(K_i,T)  \bigg) - \frac{1}{T-t}\bigg[\frac{F_i}{K_0}-1\bigg]^2
-\]</span></p>
+<p>Reading <span class="citation">(<a href="#ref-iqbal2018volatility" role="doc-biblioref">Iqbal 2018</a>)</span></p>
+<div id="ch-1" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Ch 1</h1>
 <blockquote>
-<p>The new VIX squared approximates the conditional risk-neutral expectation of the annualized return variance over the next 30 calendar days: <span class="math display">\[
-VIX(t,T)^2 \approx E^Q_t\bigg[{RV}_{t,t+30}\bigg]
-\]</span></p>
+<p>“<span class="math inline">\(\sigma_{\textit{implied}}\)</span> is the number that one must plug into the Black-Scholes-Merton (BSM) option pricing function, along with several other parameters, in order to match this price…”</p>
+<p>“… The reason that <span class="math inline">\(\sigma_{\textit{implied}}\)</span> remains interesting is because BSM derived their formula using a plausible description for the PDF of the exchange rate. If the BSM PDF had turned out to describe observed exchange rate movements, then <span class="math inline">\(\sigma_{\textit{implied}}\)</span> would be a useful quantity with economic meaning …”</p>
+<ul>
+<li>as an approximation of the market’s forecast of <em>the volatility that will occur in the future</em></li>
+<li>as the width or standard deviation of <em>the PDF of spot that is inferred from the prices of options</em></li>
+</ul>
 </blockquote>
+<p>The BSM model’s assumption: return is log-normal distributed <span class="math display">\[\begin{align}
+  r^T_t \equiv &amp;\log{\frac{S^T}{S_t}} 
+  \sim 
+  \mathcal{N}(-\frac{1}{2}\sigma^2 \tau,\sigma^2 \tau)|_{\tau \equiv T-t} 
+  \\
+  \textit{Prob}
+  \bigg[
+  -\sigma\sqrt{\tau} (1 +\frac{1}{2} \sigma\sqrt{\tau}) &lt;  
+  &amp;\log{\frac{S^T}{S_t}} 
+  &lt;\sigma\sqrt{\tau} (1 - \frac{1}{2} \sigma\sqrt{\tau})
+  \bigg] \sim 0.68
+\end{align}\]</span></p>
+<div id="breakeven-point" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Breakeven point</h2>
+<blockquote>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>time</th>
+<th>ON</th>
+<th>1m</th>
+<th>1y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\pm 4.2 \sigma_{\textit{implied}}\)</span></td>
+<td><span class="math inline">\(\pm 23 \sigma_{\textit{implied}}\)</span></td>
+<td><span class="math inline">\(\pm 80 \sigma_{\textit{implied}}\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+</div>
+<div id="ch-2-model-indep-approach" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Ch 2, Model-Indep Approach</h1>
+<blockquote>
+<ul>
+<li>Option Expiration: 10 am NYC</li>
+<li>A model-free result, put–call parity, means that risk management practice for both calls and puts is almost identical.</li>
+</ul>
+</blockquote>
+<p>Assumptions:</p>
+<ul>
+<li>Model-assumption, about stylized feature: log-normal</li>
+<li>Econ-assumption, about motif: maximizing profit</li>
+</ul>
+<div id="payoff" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Payoff</h2>
+<p><span class="math inline">\(V_t = \mathbb{E}_t[V_T] \overset{t\rightarrow T}{\Longrightarrow} V_T \equiv \max(S_T,k)\)</span></p>
+</div>
+</div>
+<div id="reference" class="section level1 unnumbered">
+<h1 class="unnumbered">Reference</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-iqbal2018volatility" class="csl-entry">
+Iqbal, Adam S. 2018. <em>Volatility: Practical Options Theory</em>. John Wiley &amp; Sons.
+</div>
+</div>
 </div>
 
 

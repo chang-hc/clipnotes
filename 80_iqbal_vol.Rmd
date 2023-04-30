@@ -1,0 +1,67 @@
+---
+title: "Iqbal - Volatility; Practical Options Theory"
+output:
+  html_document:
+    toc: yes
+    number_sections: yes
+bibliography: ./bib/qfin.bib
+link-citations: yes
+
+---
+
+Reading [@iqbal2018volatility]
+
+# Ch 1 
+
+> "$\sigma_{\textit{implied}}$ is the number that one must plug into the Black-Scholes-Merton (BSM) option pricing function, along with several other parameters, in order to match this price..."
+> 
+> "... The reason that $\sigma_{\textit{implied}}$ remains interesting is because BSM derived their formula using a plausible description for the PDF of the exchange rate. If the BSM PDF had turned out to describe observed exchange rate movements, then $\sigma_{\textit{implied}}$ would be a useful quantity with economic meaning ..."
+>
+> - as an approximation of the market’s forecast of *the volatility that will occur in the future* 
+> - as the width or standard deviation of *the PDF of spot that is inferred from the prices of options*
+
+
+The BSM model's assumption: return is log-normal distributed
+\begin{align}
+  r^T_t \equiv &\log{\frac{S^T}{S_t}} 
+  \sim 
+  \mathcal{N}(-\frac{1}{2}\sigma^2 \tau,\sigma^2 \tau)|_{\tau \equiv T-t} 
+  \\
+  \textit{Prob}
+  \bigg[
+  -\sigma\sqrt{\tau} (1 +\frac{1}{2} \sigma\sqrt{\tau}) <  
+  &\log{\frac{S^T}{S_t}} 
+  <\sigma\sqrt{\tau} (1 - \frac{1}{2} \sigma\sqrt{\tau})
+  \bigg] \sim 0.68
+\end{align}
+
+
+## Breakeven point
+
+
+> |time|ON|1m|1y|
+> |--|--|--|--|
+> |$\pm 4.2 \sigma_{\textit{implied}}$|$\pm 23 \sigma_{\textit{implied}}$|$\pm 80 \sigma_{\textit{implied}}$
+
+
+
+# Ch 2, Model-Indep Approach
+
+> - Option Expiration: 10 am NYC
+> - A model-free result, put–call parity, means that risk management practice for both calls and puts is almost identical.
+
+Assumptions: 
+
+- Model-assumption, about stylized feature: log-normal
+- Econ-assumption, about motif: maximizing profit
+
+
+## Payoff
+
+$V_t = \mathbb{E}_t[V_T]  \overset{t\rightarrow T}{\Longrightarrow} V_T \equiv \max(S_T,k)$
+
+
+
+
+
+# Reference

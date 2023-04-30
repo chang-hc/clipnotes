@@ -9,9 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="HCC" />
 
+<meta name="date" content="2023-04-30" />
 
-<title>Carr and Wu, 2006, A tale of two indices</title>
+<title>R Reference</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -394,36 +396,82 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Carr and Wu, 2006, A tale of two indices</h1>
+<h1 class="title toc-ignore">R Reference</h1>
+<h4 class="author">HCC</h4>
+<h4 class="date">2023-04-30</h4>
 
 </div>
 
 
-<p>Reading <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=871729">Carr and Wu, 2006, A tale of two indices.</a></p>
+<div id="case-study" class="section level2">
+<h2>Case-Study</h2>
 <ul>
-<li>Following up from <a href="https://www.bis.org/publ/work952.htm">2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”</a></li>
-</ul>
-<div id="background" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Background</h1>
+<li><a href="https://business-science.github.io/tidyquant/">tidyquant</a>
 <ul>
-<li>VXO: options data on the S&amp;P 100 index (OEX) <span class="math inline">\(\Rightarrow\)</span> VIX: options data on the S&amp;P 500 index (SPX)
-<ul>
-<li>a weighted average of option prices across all strikes <strong><em>at two nearby maturities</em></strong>.</li>
+<li><a href="https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html">Intro</a></li>
 </ul></li>
-<li>to use options on the underlying S&amp;P 500 index to define valuation bounds on <strong><em>VIX futures</em></strong></li>
-<li>to exploit information in the underlying <strong><em>SPX options market</em></strong> and <strong><em>VIX futures</em></strong> to price <strong><em>options on the new VIX</em></strong></li>
+<li><a href="https://r-pkgs.org/">R Packages (2e)</a></li>
+<li><a href="https://github.com/blottb7/tick-data/">blottb7/tick-data/</a></li>
 </ul>
 </div>
-<div id="vix" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> VIX</h1>
-<p><span class="math display">\[
-VIX(t,T) = \frac{2}{T-t} \bigg(\sum_{i} \frac{\Delta K}{K^2_i} e^{r_i (T-t)} O_i(K_i,T)  \bigg) - \frac{1}{T-t}\bigg[\frac{F_i}{K_0}-1\bigg]^2
-\]</span></p>
-<blockquote>
-<p>The new VIX squared approximates the conditional risk-neutral expectation of the annualized return variance over the next 30 calendar days: <span class="math display">\[
-VIX(t,T)^2 \approx E^Q_t\bigg[{RV}_{t,t+30}\bigg]
-\]</span></p>
-</blockquote>
+<div id="morden-r-must-read" class="section level2">
+<h2>Morden R: Must-Read</h2>
+<ul>
+<li><a href="http://modern-rstats.eu/">Modern R with the tidyverse</a></li>
+<li><a href="https://r4ds.had.co.nz/model-basics.html">R for Data Science</a></li>
+<li><a href="https://rc2e.com/timeseriesanalysis#recipe-id085">R Cookbook 2ed</a></li>
+<li><a href="https://www.oreilly.com/library/view/r-for-everyone/9780134546988/">R for Everyone: Advanced Analytics and Graphics, 2nd Edition</a></li>
+</ul>
+</div>
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<ul>
+<li><a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html">R Markdown: The Definitive Guide</a></li>
+<li><a href="https://nceas.github.io/training-rmarkdown-website/tutorial.html" class="uri">https://nceas.github.io/training-rmarkdown-website/tutorial.html</a></li>
+<li><a href="https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html" class="uri">https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html</a></li>
+<li><a href="https://p8105.com/making_websites.html" class="uri">https://p8105.com/making_websites.html</a></li>
+<li><a href="https://github.com/yihui/knitr-examples" class="uri">https://github.com/yihui/knitr-examples</a></li>
+</ul>
+</div>
+<div id="diagrams" class="section level2">
+<h2>Diagrams</h2>
+<ul>
+<li><a href="https://remlapmot.github.io/mrdags/">DAG, DiagrammeR etc</a></li>
+<li><a href="https://stackoverflow.com/questions/27880563/tikz-in-r-markdown">Tikz vs Rmd</a></li>
+</ul>
+</div>
+<div id="latex" class="section level2">
+<h2>Latex</h2>
+<ul>
+<li><a href="https://www.latex4technics.com/codesearch?q=tikz" class="uri">https://www.latex4technics.com/codesearch?q=tikz</a></li>
+</ul>
+<div id="tikz-cd" class="section level3">
+<h3>TikZ-cd</h3>
+<ul>
+<li><a href="https://ctan.org/pkg/tikz-cd?lang=en" class="uri">https://ctan.org/pkg/tikz-cd?lang=en</a></li>
+<li><a href="https://tikzcd.yichuanshen.de/">[UI] TikZ-cd editor</a></li>
+<li><a href="https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf">[pdf] Commutative diagrams with TikZ</a></li>
+</ul>
+<p><img src="99_cheatsheet_R_ref_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="99_cheatsheet_R_ref_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<ul>
+<li><a href="https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/" class="uri">https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/</a></li>
+</ul>
+<p><img src="99_cheatsheet_R_ref_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="tikz-per-se" class="section level3">
+<h3>TikZ per se</h3>
+<ul>
+<li><a href="https://tikz.dev/" class="uri">https://tikz.dev/</a></li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ" class="uri">https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ</a></li>
+<li><a href="https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd" class="uri">https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd</a></li>
+</ul>
+<p><img src="99_cheatsheet_R_ref_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<ul>
+<li><a href="https://texample.net/tikz/examples/commutative-diagram-tikz/" class="uri">https://texample.net/tikz/examples/commutative-diagram-tikz/</a></li>
+</ul>
+<p><img src="99_cheatsheet_R_ref_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
 </div>
 
 

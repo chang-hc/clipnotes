@@ -10,20 +10,18 @@ output:
 ---
 
 
-# To-Do
-
-- Maintain the daily market watch
-- Set up the R backend
 
 # Market How-To
 
 
-## Trading
+## Basic
   - Iqbal - Volatility; Practical Options Theory
   - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
   - Interest Rate Markets; A Practical Approach to Fixed Income
   - Fixed Income Securities; Tools for Today's Markets
-
+  - The Front Office Manual; The Definitive Guide to Trading, Structuring and Sales (2013)
+  
+  
 ## Q-Fin
   - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
   - Lehalle - Optimal liquidity-based trading tactics
@@ -40,130 +38,18 @@ output:
 ## Archive
 
 ### [q-fin.TR]
+  - [2016, Market Microstructure Invariance: Empirical Hypotheses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2722524)
   - [2023, A Bayesian derivation of the square root law of market impact](https://arxiv.org/abs/2303.08867)
     -   [Hiroki 2020 A Brief Introductory Review of Information Thermodynamic](https://osf.io/h6dex)
   - [2023, A time-dependent Markovian model of a limit order book](https://arxiv.org/abs/2302.00846)
   - [2023, Direct quantitative evidence of the order-splitting hypothesis as the microscopic origin of long-range correlations in market order flow](https://arxiv.org/abs/2301.13505)
 
 ### $\aleph_{\alpha}$  
+  - [Explainable AI in Futures](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4291984)
   - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
   - [2023, Unifying Market Microstructure and Dynamic Asset Pricing](https://arxiv.org/abs/2304.02356)
   - [2023, Why Topological Data Analysis Detects Financial Bubbles?](https://arxiv.org/abs/2304.06877)
 
-# R Ref
-
-##  Case-Study
-- [tidyquant](https://business-science.github.io/tidyquant/)
-  - [Intro](https://business-science.github.io/tidyquant/articles/TQ00-introduction-to-tidyquant.html)
-- [R Packages (2e)](https://r-pkgs.org/)
-- [blottb7/tick-data/](https://github.com/blottb7/tick-data/)
-
-
-## Morden R: Must-Read
-- [Modern R with the tidyverse](http://modern-rstats.eu/)
-- [R for Data Science](https://r4ds.had.co.nz/model-basics.html)
-- [R Cookbook 2ed](https://rc2e.com/timeseriesanalysis#recipe-id085)
-- [R for Everyone: Advanced Analytics and Graphics, 2nd Edition](https://www.oreilly.com/library/view/r-for-everyone/9780134546988/)
-
-
-## R Markdown 
-- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
-- <https://nceas.github.io/training-rmarkdown-website/tutorial.html>
-- <https://rstudio4edu.github.io/rstudio4edu-book/rmd-dress.html>
-- <https://p8105.com/making_websites.html>
-- <https://github.com/yihui/knitr-examples>
-
-## Diagrams
-- [DAG, DiagrammeR etc](https://remlapmot.github.io/mrdags/)
-- [Tikz vs Rmd](https://stackoverflow.com/questions/27880563/tikz-in-r-markdown)
-  
-## TikZ-cd
-- <https://ctan.org/pkg/tikz-cd?lang=en>
-- [ [UI] TikZ-cd editor](https://tikzcd.yichuanshen.de/)
-- [ [pdf] Commutative diagrams with TikZ](https://ctan.math.washington.edu/tex-archive/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf)
-
-```{tikz, echo=FALSE}
-\usetikzlibrary{cd}
-\begin{tikzcd}
-A \arrow[rd] \arrow[r] & B \\
-&C\\
-\end{tikzcd}
-```  
-
-
-```{tikz, echo=FALSE}
-\usetikzlibrary{cd}
-\begin{tikzcd}
-T
-\arrow[drr, bend left, "x"]
-\arrow[ddr, bend right, "y"]
-\arrow[dr, dotted, "{(x,y)}" description] & & \\
-& X \times_Z Y \arrow[r, "p"] \arrow[d, "q"]
-& X \arrow[d, "f"] \\
-& Y \arrow[r, "g"]
-& Z
-\end{tikzcd}
-```  
-
-- <https://blogs.fu-berlin.de/gruenstaeudl/blog/page/7/>
-
-```{tikz, echo=FALSE}
-\usetikzlibrary{cd}
- \tikzcdset{every label/.append style = {font = \tiny}}
-\begin{tikzcd}[row sep=50, column sep=50]
-foo \arrow[r, shift left, "q_{foobar}"]
-\arrow[r, <-, shift right, swap, "q_{barfoo}"]
-\arrow[dr, shift right=2]
-& bar \arrow[d, shift left,"q_{barqux}"] \\
-& qux \arrow[u, shift left, "q_{quxbar}"]
-\arrow[ul, shift left=4, "q_{quxfoo}"]
-\end{tikzcd}
-``` 
-
-
-
-## TikZ per se
-- <https://tikz.dev/>
-- <https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ>
-- <https://github.com/yihui/knitr-examples/blob/master/058-engine-tikz.Rmd>
-  
-```{tikz, echo=FALSE}
-\usetikzlibrary{arrows}
-\begin{tikzpicture}[node distance=2cm, auto,>=latex', thick, scale = 0.5]
-\node (P) {$P$};
-\node (B) [right of=P] {$B$};
-\node (A) [below of=P] {$A$};
-\node (C) [below of=B] {$C$};
-\node (P1) [node distance=1.4cm, left of=P, above of=P] {$\hat{P}$};
-\draw[->] (P) to node {$f$} (B);
-\draw[->] (P) to node [swap] {$g$} (A);
-\draw[->] (A) to node [swap] {$f$} (C);
-\draw[->] (B) to node {$g$} (C);
-\draw[->, bend right] (P1) to node [swap] {$\hat{g}$} (A);
-\draw[->, bend left] (P1) to node {$\hat{f}$} (B);
-\draw[->, dashed] (P1) to node {$k$} (P);
-\end{tikzpicture}
-```
-
-- <https://texample.net/tikz/examples/commutative-diagram-tikz/>
-  
-```{tikz,echo=FALSE}
-\begin{tikzpicture}
-  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
-  {
-     F_t(x) & F(x) \\
-     A_t & A \\
-  };
-  \path[-stealth]
-    (m-1-1) edge node [left] {$\mathcal{B}_X$} (m-2-1)
-            edge [double] node [below] {$\mathcal{B}_t$} (m-1-2)
-    (m-2-1.east|-m-2-2) edge node [below] {$\mathcal{B}_T$}
-            node [above] {$\exists$} (m-2-2)
-    (m-1-2) edge node [right] {$\mathcal{B}_T$} (m-2-2)
-            edge [dashed,-] (m-2-1);
-\end{tikzpicture}
-```
-  
 
 # Larger than Life 
   
@@ -173,6 +59,7 @@ foo \arrow[r, shift left, "q_{foobar}"]
   - Wells: Effective Theories in Physics
 
 ## Bayesian
+  - Bayesian Statistical Modeling With Stan, R, and Python
   - Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data
   - McElreath, Statistical rethinking
   - Bayesian Essentials with R, Second Edition
@@ -186,5 +73,6 @@ foo \arrow[r, shift left, "q_{foobar}"]
   - Lenister's Basic Category Theory
 
 ## Fun
+  - Complex Integration; A Compendium of Smart and Little-Known Techniques for Evaluating Integrals and Sums
   -  A Short Journey from Quarks to the Universe 
   
