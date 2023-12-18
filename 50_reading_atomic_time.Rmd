@@ -1,0 +1,9 @@
+---
+title: "原子時間"
+author: "HCC"
+date: "12/19/2023"
+output: html_document
+---
+
+
+> 人生不是一場短跑, 也不是一場馬拉松, 而是一場漫步

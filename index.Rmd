@@ -7,33 +7,38 @@ output:
     toc: yes
 ---
 
+# Quick Wins of the Day
+
+- Exercise, Stretch and Breathe
+- Daily Diversify
 
 
-- [x] Exercise: 200^2^ x 20^2^
-- [x] Daily Noting + Writing
-- [x] Stretch Your Mind: Latin + Category
 
+# WWMD
 
+## Bag of Tricks
+- Doerfler, Dead Reckoning
 
-# Market Fundamentals
-
-## Basic
-  - Iqbal - Volatility; Practical Options Theory
-  - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
+## Market101
+  - The Front Office Manual; The Definitive Guide to Trading, Structuring and Sales (2013)
   - Interest Rate Markets; A Practical Approach to Fixed Income
   - Fixed Income Securities; Tools for Today's Markets
-  - The Front Office Manual; The Definitive Guide to Trading, Structuring and Sales (2013)
+
+
+## Fundamentals
+  - Iqbal - Volatility; Practical Options Theory
+  - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
+  - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)
   
   
 ## Q-Fin
-  - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
-  - Lehalle - Optimal liquidity-based trading tactics
-  - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
   - Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)
-  - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)
   - Bouchaud - Theory of financial risk and derivative pricing; From statistical physics to risk management
   - Bouchaud - Trades, Quotes and Prices; Financial Markets Under the Microscope
   - Spadafora - Theoretical Foundations Quantitative Finance (All the Financial Math You Need to Survive)
+  - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
+  - Lehalle - Optimal liquidity-based trading tactics
+  - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
 
   
 

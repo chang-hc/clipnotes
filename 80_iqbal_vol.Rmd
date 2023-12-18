@@ -58,7 +58,13 @@ Assumptions:
 
 ## Payoff
 
-$V_t = \mathbb{E}_t[V_T]  \overset{t\rightarrow T}{\Longrightarrow} V_T \equiv \max(S_T,k)$
+\begin{align}
+V_T \equiv& \max(S_T,k) \\
+V_t =& \mathbb{E}_t[V_T]   =  \mathbb{E}_t[\max(S_T,k)]
+
+\end{align}
+
+
 
 
 

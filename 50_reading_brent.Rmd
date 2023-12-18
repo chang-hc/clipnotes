@@ -1,0 +1,19 @@
+---
+title: "Brent"
+author: "HCC"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+---
+
+Reading ***Brent Crude Oil; Genesis and Development of the World's Most Important Oil Benchmark***
+
+
+# Introduction
+- the inclusion of WTI Midland (from June 2023)
+  - Brent partials: 100,000-barrel part-cargoes in the physical/forward market.
+  - Contracts for Difference or CFDs: swaps between Dated Brent and forward Brent (weekly)
+  - Dated to Front Line or DFLs: swaps between Dated Brent and the futures front month Brent settlements (monthly)
+  - Exchange of Futures for Swaps or EFS
+  - 
