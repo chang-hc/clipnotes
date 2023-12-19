@@ -46,7 +46,7 @@ navbar:
       menu:
         - text: 'Luck Factors'
           href: 50_reading_luck_factors.html
-        - text: 'Atomic Time'
+        - text: '原子時間'
           href: 50_reading_atomic_time.html
 
 
