@@ -24,6 +24,7 @@ output: html_document
 # Tips
 - 睡前寫明日代辦事項(6+n) => 清空腦中雜事
 - 睡醒HIIT + 複習本日事項
+- (short) preview + act + (long) review
 
 
 
