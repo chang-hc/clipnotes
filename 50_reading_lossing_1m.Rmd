@@ -5,7 +5,7 @@ date: "12/20/2023"
 output: html_document
 ---
 
-> There are only a handfull of ways to avoid losses, even though there is an infinite amount of ways to overfits. 
+> There are only 3 ways to avoid losses, even though there is an infinite amount of ways to overfits. 
 
 
 # Tips
