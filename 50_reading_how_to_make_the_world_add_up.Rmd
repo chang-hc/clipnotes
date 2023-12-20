@@ -9,7 +9,8 @@ output: html_document
 # Tips
 
 0. 注意自己的情緒
-0. 確定測量量 + 留意data generation process 
+0. 從base rate 開始估計(outside view)
+0. 保持好奇: No questions before trust
+0. 到底在量什麽？
     - what is missing?
-0. 記得建立base rate: 使用outsider view
-0. 保持好奇: 要提出問題, 之後才有信任
+    - what is data generation process 
