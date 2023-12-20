@@ -48,7 +48,10 @@ navbar:
           href: 50_reading_luck_factors.html
         - text: '原子時間'
           href: 50_reading_atomic_time.html
-
+        - text: '臥底經濟學家的10堂數據偵探課'
+          href: 50_reading_how_to_make_the_world_add_up.html
+        - text: 'What I Learned Losing a Million Dollars'
+          href: 50_reading_lossing_1m.html
 
   right:
   - icon: fa-github

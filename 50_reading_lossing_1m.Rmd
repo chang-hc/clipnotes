@@ -1,0 +1,10 @@
+---
+title: "What I Learned Losing a Million Dollars"
+author: "HCC"
+date: "12/20/2023"
+output: html_document
+---
+
+
+# Tips
+0. Don't confuse self-worth with net-worth: Don't internalize the trade
