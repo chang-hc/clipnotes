@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="HCC" />
 
 
-<title>Iqbal - Volatility; Practical Options Theory</title>
+<title>Your Brain at Work</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -62,28 +63,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-/* for pandoc --citeproc since 2.11 */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 
 
@@ -463,93 +442,29 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Iqbal - Volatility; Practical Options Theory</h1>
+<h1 class="title toc-ignore">Your Brain at Work</h1>
+<h4 class="author">HCC</h4>
+<h4 class="date">3/4/2024</h4>
 
 </div>
 
 
-<p>Reading <span class="citation">(<a href="#ref-iqbal2018volatility" role="doc-biblioref">Iqbal 2018</a>)</span></p>
-<div id="ch-1" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Ch 1</h1>
 <blockquote>
-<p>“<span class="math inline">\(\sigma_{\textit{implied}}\)</span> is the number that one must plug into the Black-Scholes-Merton (BSM) option pricing function, along with several other parameters, in order to match this price…”</p>
-<p>“… The reason that <span class="math inline">\(\sigma_{\textit{implied}}\)</span> remains interesting is because BSM derived their formula using a plausible description for the PDF of the exchange rate. If the BSM PDF had turned out to describe observed exchange rate movements, then <span class="math inline">\(\sigma_{\textit{implied}}\)</span> would be a useful quantity with economic meaning …”</p>
-<ul>
-<li>as an approximation of the market’s forecast of <em>the volatility that will occur in the future</em></li>
-<li>as the width or standard deviation of <em>the PDF of spot that is inferred from the prices of options</em></li>
-</ul>
+<p>這不是你的問題, 這是你的大腦的實質限制</p>
 </blockquote>
-<p>The BSM model’s assumption: return is log-normal distributed <span class="math display">\[\begin{align}
-  r^T_t \equiv &amp;\log{\frac{S^T}{S_t}} 
-  \sim 
-  \mathcal{N}(-\frac{1}{2}\sigma^2 \tau,\sigma^2 \tau)|_{\tau \equiv T-t} 
-  \\
-  \textit{Prob}
-  \bigg[
-  -\sigma\sqrt{\tau} (1 +\frac{1}{2} \sigma\sqrt{\tau}) &lt;  
-  &amp;\log{\frac{S^T}{S_t}} 
-  &lt;\sigma\sqrt{\tau} (1 - \frac{1}{2} \sigma\sqrt{\tau})
-  \bigg] \sim 0.68
-\end{align}\]</span></p>
-<div id="breakeven-point" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Breakeven point</h2>
-<blockquote>
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>time</th>
-<th>ON</th>
-<th>1m</th>
-<th>1y</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(\pm 4.2 \sigma_{\textit{implied}}\)</span></td>
-<td><span class="math inline">\(\pm 23 \sigma_{\textit{implied}}\)</span></td>
-<td><span class="math inline">\(\pm 80 \sigma_{\textit{implied}}\)</span></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-</div>
-</div>
-<div id="ch-2-model-indep-approach" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Ch 2, Model-Indep Approach</h1>
-<blockquote>
+<div id="ch1-資訊排山倒海而來-集中能量-先決定優先次序" class="section level1">
+<h1>Ch1: 資訊排山倒海而來 =&gt; 集中能量, 先決定優先次序</h1>
 <ul>
-<li>Option Expiration: 10 am NYC</li>
-<li>A model-free result, put–call parity, means that risk management practice for both calls and puts is almost identical.</li>
-</ul>
-</blockquote>
-<p>Assumptions:</p>
+<li>心智劇台的演員與觀眾
 <ul>
-<li>Model-assumption, about stylized feature: log-normal</li>
-<li>Econ-assumption, about motif: maximizing profit</li>
+<li>讓重要的演員先上台：第一處理的是”決定本日優先事項”
+<ul>
+<li>一旦資源用完了, 下一個活動所剩的資源就不多了</li>
+<li>因為你最好的思考品質持續的時間是有限的, 而解決方法並不一定是加倍努力</li>
+<li>新資訊繼續進入短期記憶, 會擾亂記憶行程的過程</li>
+</ul></li>
+</ul></li>
 </ul>
-<div id="payoff" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Payoff</h2>
-<p><span class="math display">\[\begin{align}
-V_T \equiv&amp; \max(S_T,k) \\
-V_t =&amp; \mathbb{E}_t[V_T]   =  \mathbb{E}_t[\max(S_T,k)]
-
-\end{align}\]</span></p>
-</div>
-</div>
-<div id="reference" class="section level1 unnumbered">
-<h1 class="unnumbered">Reference</h1>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-iqbal2018volatility" class="csl-entry">
-Iqbal, Adam S. 2018. <em>Volatility: Practical Options Theory</em>. John Wiley &amp; Sons.
-</div>
-</div>
 </div>
 
 

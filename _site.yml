@@ -52,6 +52,8 @@ navbar:
           href: 50_reading_how_to_make_the_world_add_up.html
         - text: 'What I Learned Losing a Million Dollars'
           href: 50_reading_lossing_1m.html
+        - text: "Your Brain at work"
+          href: 50_reading_your_brain_at_work.html
 
   right:
   - icon: fa-github

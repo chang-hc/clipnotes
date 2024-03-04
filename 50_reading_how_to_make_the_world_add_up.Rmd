@@ -10,7 +10,7 @@ output: html_document
 
 0. 注意自己的情緒
 0. 從base rate 開始估計(outside view)
-0. 保持好奇: No questions before trust
+0. 保持好奇 
 0. 到底在量什麽？
     - what is missing?
     - what is data generation process 
