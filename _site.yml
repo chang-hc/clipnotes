@@ -24,36 +24,43 @@ navbar:
           href: 99_cheatsheet_R_ref.html  
         - text: "Rmd and Tikz"
           href: 99_cheatsheet_tikz.html            
-    - text: "Physics"
-      icon: fa-gear
-      menu:
-        - text: "Becker-Becker-Schwarz"
-        - text: 'ch00.00'
-          href: 01_becker2006string.html
-        - text: '---'
-        - text: "CFT for Particle Physicts"
-          href: 01_CFT4hep-ph.html
-        - text: '---'
-        - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
-          href: 01_Hollowood_RGinQFTs.html
-    - text: "Bayesian"
-      icon: fa-gear
-      menu:
-        - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
-          href: 30_Barreda_Silbert_2023.html
+
+
     - text: "Reading"
       icon: fa-gear
       menu:
-        - text: 'Luck Factors'
-          href: 50_reading_luck_factors.html
-        - text: '原子時間'
-          href: 50_reading_atomic_time.html
-        - text: '臥底經濟學家的10堂數據偵探課'
-          href: 50_reading_how_to_make_the_world_add_up.html
-        - text: 'What I Learned Losing a Million Dollars'
-          href: 50_reading_lossing_1m.html
-        - text: "Your Brain at work"
-          href: 50_reading_your_brain_at_work.html
+        - text: "Bayesian"
+          icon: fa-arrows-rotate
+          menu:        
+          - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
+            href: 30_Barreda_Silbert_2023.html          
+        - text: "Physics"
+          icon: fa-pen-to-square
+          menu:      
+          - text: "Becker-Becker-Schwarz"
+          - text: 'ch00.00'
+            href: 01_becker2006string.html
+          - text: '---'
+          - text: "CFT for Particle Physicts"
+            href: 01_CFT4hep-ph.html
+          - text: '---'
+          - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
+            href: 01_Hollowood_RGinQFTs.html          
+        - text: "Bed Time Reading"
+          icon: fa-trash
+          menu:
+          - text: 'Luck Factors'
+            href: 50_reading_luck_factors.html
+          - text: '原子時間'
+            href: 50_reading_atomic_time.html
+          - text: '臥底經濟學家的10堂數據偵探課'
+            href: 50_reading_how_to_make_the_world_add_up.html
+          - text: 'What I Learned Losing a Million Dollars'
+            href: 50_reading_lossing_1m.html
+          - text: "Your Brain at work"
+            href: 50_reading_your_brain_at_work.html
+          - text: "Tiny Habits"
+            href: 50_reading_tiny_habits.html
 
   right:
   - icon: fa-github

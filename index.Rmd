@@ -9,12 +9,22 @@ output:
 
 # Quick Wins of the Day
 
-- Exercise, Stretch and Breathe
-- Daily Diversify
+>- First Thing of the Day: ***Triage and Prioritize***
+>- Always Remember:  ***Tag Your Emotional Status***
 
 
 
 # WWMD
+
+## Maybe
+0. Rethinking
+    - Martin, PyMC
+1. Kernel Adaptive Filtering
+2. [MOSEK Modeling Cookbook](https://docs.mosek.com/modeling-cookbook/index.html)
+3. Molnar 
+    - Introduction To Conformal Prediction With Python 
+    - [Conformal Risk Control](https://arxiv.org/abs/2208.02814)
+4. 
 
 ## Bag of Tricks
 - Doerfler, Dead Reckoning
