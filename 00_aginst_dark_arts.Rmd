@@ -7,6 +7,38 @@ output:
     toc: yes
 ---
 
+# WMD
+
+
+## Bag of Tricks
+- Doerfler, Dead Reckoning
+
+## Market101
+  - The Front Office Manual; The Definitive Guide to Trading, Structuring and Sales (2013)
+  - Interest Rate Markets; A Practical Approach to Fixed Income
+  - Fixed Income Securities; Tools for Today's Markets
+
+
+## Fundamentals
+  - Iqbal - Volatility; Practical Options Theory
+  - Iqbal - Foreign Exchange; Practical Asset Pricing and Macroeconomic Theory
+  - Gueant - The Financial Mathematics of Market Liquidity; From Optimal Execution to Market Making (2016)
+  
+  
+## Q-Fin
+  - Jacob - Stochastic Processes for Physicists; Understanding Noisy Systems (2010)
+  - Bouchaud - Theory of financial risk and derivative pricing; From statistical physics to risk management
+  - Bouchaud - Trades, Quotes and Prices; Financial Markets Under the Microscope
+  - Spadafora - Theoretical Foundations Quantitative Finance (All the Financial Math You Need to Survive)
+  - Lehalle - Market Microstructure Knowledge Needed for Controlling an Intra-Day Trading Process 
+  - Lehalle - Optimal liquidity-based trading tactics
+  - Lehalle, Laruelle - Market Microstructure in Practice, Second Edition
+
+  
+
+
+
+
 # $\aleph_{\alpha}$  
   - [Explainable AI in Futures](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4291984)
   - [2021, Todorov, “Passive Funds Affect Prices: Evidence from the Most ETF-dominated Asset Classes”](https://www.bis.org/publ/work952.htm)
