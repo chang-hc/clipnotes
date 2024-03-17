@@ -23,6 +23,7 @@ output:
     - Martin, PyMC
 1. Kernel Adaptive Filtering
 2. [MOSEK Modeling Cookbook](https://docs.mosek.com/modeling-cookbook/index.html)
+    - [Regression techniques for Portfolio Optimisation using MOSEK](https://arxiv.org/abs/1310.3397)
 3. Molnar 
     - Introduction To Conformal Prediction With Python 
     - [Conformal Risk Control](https://arxiv.org/abs/2208.02814)
