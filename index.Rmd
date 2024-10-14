@@ -16,6 +16,7 @@ output:
 0. Market Veteran 101 + Roll-Call
 1. Bayesian Multilevels
 2. Stochastic Optimal Stopping
+  - [dos Reis - Stochastic Control and Dynamic Asset Allocation](http://www.drps.ed.ac.uk/20-21/dpt/cxmath11150.htm)
 
 # Interior
 0. Farnwoth's Stoic
