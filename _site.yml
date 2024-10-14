@@ -32,7 +32,7 @@ navbar:
           icon: fa-trash
           menu:
           - text: 'Breathe'
-            href: 50_reading_breathe_nestor.html
+            href:  50_reading_breathe_nestor.html
           - text: 'Luck Factors'
             href: 50_reading_luck_factors.html
           - text: '原子時間'
