@@ -25,27 +25,9 @@ navbar:
         - text: "Rmd and Tikz"
           href: 99_cheatsheet_tikz.html            
 
-
     - text: "Reading"
       icon: fa-gear
       menu:
-        - text: "Bayesian"
-          icon: fa-arrows-rotate
-          menu:        
-          - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
-            href: 30_Barreda_Silbert_2023.html          
-        - text: "Physics"
-          icon: fa-pen-to-square
-          menu:      
-          - text: "Becker-Becker-Schwarz"
-          - text: 'ch00.00'
-            href: 01_becker2006string.html
-          - text: '---'
-          - text: "CFT for Particle Physicts"
-            href: 01_CFT4hep-ph.html
-          - text: '---'
-          - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
-            href: 01_Hollowood_RGinQFTs.html          
         - text: "Daily Reading - 1 hr"
           icon: fa-trash
           menu:
@@ -63,7 +45,24 @@ navbar:
             href: 50_reading_your_brain_at_work.html
           - text: "Tiny Habits"
             href: 50_reading_tiny_habits.html
-
+        - text: "Bayesian"
+          icon: fa-arrows-rotate
+          menu:        
+          - text: 'Barreda and Silbert, Bayesian Multilevel Models for Repeated Measures Data'
+            href: 30_Barreda_Silbert_2023.html          
+        - text: "Physics"
+          icon: fa-pen-to-square
+          menu:      
+          - text: "Becker-Becker-Schwarz"
+          - text: 'ch00.00'
+            href: 01_becker2006string.html
+          - text: '---'
+          - text: "CFT for Particle Physicts"
+            href: 01_CFT4hep-ph.html
+          - text: '---'
+          - text: "Hollowood: Renormalization Group and Fixed Points in QFT"
+            href: 01_Hollowood_RGinQFTs.html 
+            
   right:
   - icon: fa-github
     href: https://github.com/chang-hi
