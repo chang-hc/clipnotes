@@ -12,16 +12,16 @@ output:
 >- Always Remember to ***Breathe***
 >- First Thing of the Day:  ***Triage and Prioritize***
 
+# Exterior
+0. Market Veteran 101 + Roll-Call
+1. Bayesian Multilevels
+2. Stochastic Optimal Stopping
+
+# Interior
+0. Farnwoth's Stoic
+1. Nestor's Rkom Breathe
+2. Benj's Speed + Talwaler's Solve
+3. Nair's Intro
 
 
-
-# Triage
-0. Rethinking + Martin, PyMC
-1. Kernel Adaptive Filtering
-2. [MOSEK Modeling Cookbook](https://docs.mosek.com/modeling-cookbook/index.html)
-    - [Regression techniques for Portfolio Optimisation using MOSEK](https://arxiv.org/abs/1310.3397)
-    - [MOSEK Tutorials: regression-leastsquares.ipynb](https://github.com/MOSEK/Tutorials/blob/master/leastsquares/regression-leastsquares.ipynb)
-3. Molnar 
-    - Introduction To Conformal Prediction With Python 
-    - [Conformal Risk Control](https://arxiv.org/abs/2208.02814)
 
