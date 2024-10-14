@@ -21,7 +21,7 @@ output:
 # Interior
 0. Farnwoth's Stoic
 1. Nestor's Rkom Breathe
-2. Benj's Speed + Talwaler's Solve
+2. Benj's Speed + TWK's Solve
 3. Nair's Intro
 
 
