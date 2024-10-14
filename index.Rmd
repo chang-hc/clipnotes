@@ -12,7 +12,7 @@ output:
 >- First Thing of the Day: 
 >    - ***Triage and Prioritize***
 >- Always Remember:  
->    - ***Tag Your Emotional Status***
+>    - ***Breathe***
 
 
 
