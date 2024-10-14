@@ -7,19 +7,16 @@ output:
     toc: yes
 ---
 
-# Quick Wins of the Day
+# Mini-Habits, aka Quick-Wins-of-Your-Day
 
->- First Thing of the Day: 
->    - ***Triage and Prioritize***
->- Always Remember:  
->    - ***Breathe***
+>- Always Remember to ***Breathe***
+>- First Thing of the Day:  ***Triage and Prioritize***
 
 
 
 
 # Triage
-0. Rethinking
-    - Martin, PyMC
+0. Rethinking + Martin, PyMC
 1. Kernel Adaptive Filtering
 2. [MOSEK Modeling Cookbook](https://docs.mosek.com/modeling-cookbook/index.html)
     - [Regression techniques for Portfolio Optimisation using MOSEK](https://arxiv.org/abs/1310.3397)
