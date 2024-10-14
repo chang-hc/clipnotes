@@ -1,0 +1,11 @@
+---
+title: "Nestor's Breathe"
+author: "HCC"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+# Chap 2
+
+1. Optimal heart bit: 180 - your_age
